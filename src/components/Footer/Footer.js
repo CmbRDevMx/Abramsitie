@@ -13,9 +13,9 @@ function Footer() {
           <p className="border-l-[3px] pl-[20px]">All Copyright Reserved.</p>
         </div>
         <div className="col-span-1 md:col-span-4 flex justify-center md:justify-start text-gray-700 text-[24px] space-x-4">
-          <ul className="md:flex md:items-center space-x-4">
+          <ul className="md:flex md:items-center ">
             <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3">Home</li>
-            <li className="dropdown cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3 relative">About</li>
+            <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3 ">About</li>
             <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3">Service</li>
             <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3">Contact</li>
           </ul>
