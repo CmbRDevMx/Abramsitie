@@ -3,24 +3,28 @@
 @tailwind utilities;
 
 @layer components {
-    .main_heading {
-        @apply lg:leading-[74px] md:leading-[64px] leading-[54px] font-bold	lg:text-[64px] md:text-[52px] text-[42px]
-    }
+  .main_heading {
+    @apply lg:leading-[74px] md:leading-[64px] leading-[54px] font-bold	lg:text-[64px] md:text-[52px] text-[42px];
+  }
 
-    .services_heading{
-        @apply leading-[30px] font-semibold text-[26px]
-    }
+  .services_heading {
+    @apply leading-[30px] font-semibold text-[26px];
+  }
 
-    .text{
-        @apply leading-[24px] font-normal text-[16px]
-    }
-    .btn{
-        @apply  text-[18px] font-semibold leading-[22px] bg-customGreen gap-[10px] text-white
-    }
-    .blog_heading{
-        @apply  leading-[90px] md:leading-[110px] lg:leading-[129px] text-[76px] md:text-[96px] lg:text-[110px] font-black text-customGreen 
-    }
-    .blog_heading2{
-        @apply  text-[32] md:text-[38px] lg:text-[45px] leading-[42px] md:leading-[48px] lg:leading-[52px] font-extrabold text-gray-400
-    }
+  .text {
+    @apply leading-[24px] font-normal text-[16px];
+  }
+  .btn {
+    @apply text-[18px] font-semibold leading-[22px] bg-customGreen gap-[10px] text-white;
+  }
+  .blog_heading {
+    @apply leading-[90px] md:leading-[110px] lg:leading-[129px] text-[76px] md:text-[96px] lg:text-[110px] font-black text-customGreen;
+  }
+  .blog_heading2 {
+    @apply text-[32] md:text-[38px] lg:text-[45px] leading-[42px] md:leading-[48px] lg:leading-[52px] font-extrabold text-gray-400;
+  }
+}
+
+body {
+  scroll-behavior: smooth;
 }
