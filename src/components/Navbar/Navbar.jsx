@@ -17,11 +17,20 @@ function Navbar() {
       label: "About",
       path: "#about",
     },
+    {
+      label: "Service",
+      path: "#service",
+    },
+    {
+      label: "Contact",
+      path: "#contact",
+    },
   ];
+
   return (
     <header className="bg-white">
       <div className="container mx-auto px-4 py-3 grid grid-cols-8 gap-4 items-center">
-        <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2 md:col-span-1 w-16 2xl:w-20 h-10 2xl:h-14">
           <img src="img/logo.png" alt="Logo" className="" />
         </div>
         <div className="col-span-3 md:col-span-5  flex justify-center md:justify-start">
@@ -32,7 +41,7 @@ function Navbar() {
             checked={toggleMenu}
             onChange={handleToggle}
           />
-          <div className="md:flex items-center text-gray-700 text-[24px] justify-start space-x-4">
+          <div className="md:flex items-center text-gray-700 text-xl 2xl:text-2xl justify-start space-x-4">
             <ul className="md:flex hidden md:items-center space-x-4 col-span-6">
               {navLinks.map((link) => (
                 <Link to={link.path}>
@@ -41,12 +50,6 @@ function Navbar() {
                   </li>
                 </Link>
               ))}
-              <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3">
-                Service
-              </li>
-              <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3">
-                Contact{" "}
-              </li>
             </ul>
             <label
               htmlFor="menu-toggle"
