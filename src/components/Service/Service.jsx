@@ -1,7 +1,37 @@
+import { Popover } from "antd";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { IoCallOutline } from "react-icons/io5";
 
 function Service() {
+  const serviceData = [
+    {
+      title: "Paid Ads",
+      description:
+        " Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+    },
+    {
+      title: "Target Audience Research",
+      description:
+        "Unlock the secrets of your audience with CST's Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+    },
+    {
+      title: "Google Ads",
+      description:
+        "Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+    },
+    {
+      title: "Billboard Ads",
+      description:
+        "Stand tall and grab attention with CST's Advertisement Service. Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+    },
+    {
+      title: "Marketing Consulting",
+      description:
+        "Let our seasoned experts guide you. Stand tall and grab attention with CST's Advertisement Service. Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+    },
+  ];
+
   return (
     <section className="bg-customGreen">
       <div
@@ -11,26 +41,26 @@ function Service() {
         <h1 className="main_heading">A wide range of services</h1>
       </div>
       <div className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <div className="border-t-2 border-gray-600 space-y-3 pb-[50px]">
-          <h2 className="services_heading pt-[20px]">
-            Target Audience Research
-          </h2>
-          <p>
-            Unlock the secrets of your audience with CST's Qualitative Research
-          </p>
-        </div>
-        <div className="border-t-2 border-gray-600 space-y-3 pb-[50px]">
-          <h2 className="services_heading pt-[20px]">Google Ads</h2>
-          <p>Boost your online presence with CST's Google Paid Ads Service.</p>
-        </div>
-        <div className="border-t-2 border-gray-600 space-y-3 pb-[50px]">
-          <h2 className="services_heading pt-[20px]">Billboard Ads</h2>
-          <p>Stand tall and grab attention with CST's Advertisement Service.</p>
-        </div>
-        <div className="border-t-2 border-gray-600 space-y-3 pb-[50px]">
-          <h2 className="services_heading pt-[20px]">Marketing Consulting</h2>
-          <p>Let our seasoned experts guide you.</p>
-        </div>
+        {serviceData.map((service) => (
+          <Popover
+            content={
+              <div className="max-w-[420px] rounded-3xl bg-[#FAFAFA59] px-4 2xl:px-8 py-6 2xl:py-10">
+                <h2 className="text-2xl font-bold">{service?.title}</h2>
+                <p className="py-4">{service?.description}</p>
+                <div className="flex items-center justify-center">
+                  <button className="text-sm 2xl:text-base flex items-center gap-2 font-medium text-white btn px-4 py-2 rounded-xl">
+                    Book a call <IoCallOutline />
+                  </button>
+                </div>
+              </div>
+            }
+          >
+            <div className="border-t-2 border-gray-600 space-y-3 mb-[50px]">
+              <h2 className="services_heading pt-[20px]">{service?.title}</h2>
+              <p className="line-clamp-2">{service?.description}</p>
+            </div>
+          </Popover>
+        ))}
       </div>
       <div className="flex justify-center pb-[50px] ">
         <button className="btn flex items-center bg-black text-white py-[10px] px-[30px] rounded-xl">

@@ -1,5 +1,8 @@
+import { Drawer } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { IoMdHome } from "react-icons/io";
+import { FiMenu } from "react-icons/fi";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,10 +30,12 @@ function Navbar() {
     },
   ];
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <header className="bg-white">
       <div className="container mx-auto px-4 py-3 grid grid-cols-8 gap-4 items-center">
-        <div className="col-span-2 md:col-span-1 w-16 2xl:w-20 h-10 2xl:h-14">
+        <div className="col-span-2 md:col-span-1 w-12 md:w-16 2xl:w-20 h-7 md:h-10 2xl:h-14">
           <img src="img/logo.png" alt="Logo" className="" />
         </div>
         <div className="col-span-3 md:col-span-5  flex justify-center md:justify-start">
@@ -51,36 +56,43 @@ function Navbar() {
                 </Link>
               ))}
             </ul>
-            <label
-              htmlFor="menu-toggle"
-              className="menu-icon cursor-pointer md:hidden"
-            >
-              <span
-                className={`navicon bg-gray-700 block w-6 h-0.5 ${
-                  toggleMenu ? "rotate-45" : ""
-                }`}
-              ></span>
-              <span
-                className={`navicon bg-gray-700 block w-6 h-0.5 mt-1 ${
-                  toggleMenu ? "opacity-0" : ""
-                }`}
-              ></span>
-              <span
-                className={`navicon bg-gray-700 block w-6 h-0.5 mt-1 ${
-                  toggleMenu ? "rotate--45" : ""
-                }`}
-              ></span>
-            </label>
+
+            <FiMenu
+              onClick={() => setMobileMenu(true)}
+              className="md:hidden text-xl"
+            />
           </div>
         </div>
         <div className="col-span-3 md:col-span-2 flex justify-end">
           <button
-            className="btn py-[10px] px-[30px] rounded-md col-span-2"
+            className="btn py-1.5 md:py-[10px] px-2 md:px-[30px] rounded-md col-span-2"
             onClick={handleToggle}
           >
             Book a Call
           </button>
         </div>
+      </div>
+      <div className="block md:hidden">
+        <Drawer
+          width={300}
+          placement={"left"}
+          closable={false}
+          onClose={() => setMobileMenu(false)}
+          open={mobileMenu}
+        >
+          <div className="space-y-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link?.label}
+                className={`flex items-center gap-1 nav-single-item`}
+                to={link.path}
+              >
+                {link.path === "/" && <IoMdHome />}
+                <span className={``}>{link.label}</span>
+              </Link>
+            ))}
+          </div>
+        </Drawer>
       </div>
     </header>
   );
