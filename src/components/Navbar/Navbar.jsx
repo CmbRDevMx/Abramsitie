@@ -1,8 +1,9 @@
 import { Drawer } from "antd";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { IoMdHome } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -14,19 +15,19 @@ function Navbar() {
   const navLinks = [
     {
       label: "Home",
-      path: "/",
+      path: "home",
     },
     {
       label: "About",
-      path: "#about",
+      path: "about",
     },
     {
       label: "Service",
-      path: "#service",
+      path: "service",
     },
     {
       label: "Contact",
-      path: "#contact",
+      path: "contact",
     },
   ];
 
@@ -49,7 +50,13 @@ function Navbar() {
           <div className="md:flex items-center text-gray-700 text-xl 2xl:text-2xl justify-start space-x-4">
             <ul className="md:flex hidden md:items-center space-x-4 col-span-6">
               {navLinks.map((link) => (
-                <Link to={link.path}>
+                <Link
+                  to={link.path}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
                   <li className="cursor-pointer hover:text-gray-500 border-b border-transparent py-2 px-3">
                     {link?.label}
                   </li>
@@ -83,6 +90,10 @@ function Navbar() {
           <div className="space-y-2">
             {navLinks.map((link) => (
               <Link
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
                 key={link?.label}
                 className={`flex items-center gap-1 nav-single-item`}
                 to={link.path}

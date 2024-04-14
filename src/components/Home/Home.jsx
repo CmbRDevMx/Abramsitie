@@ -98,11 +98,13 @@ function Home() {
     640: {
       slidesPerView: 1,
       spaceBetween: 10,
+      // centeredSlides: true,
     },
     // when window width is >= 1024px
     1024: {
       slidesPerView: 2,
       spaceBetween: 20,
+      // centeredSlides: false,
     },
   };
 

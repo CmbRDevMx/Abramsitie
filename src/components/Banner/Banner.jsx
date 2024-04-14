@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 function Banner() {
   return (
-    <section className="relative">
+    <section id="home" className="relative">
       <div className="banner container lg:max-w-[1236px] px-3 lg:px-2 mx-auto flex flex-col md:flex-row items-center">
         <div className="space-y-5 md:w-1/2 md:pr-8">
           <h1 className="main_heading ">Transforming likes into leads.</h1>

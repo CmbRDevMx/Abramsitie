@@ -25,8 +25,9 @@
   }
 }
 
-body {
+html {
   scroll-behavior: smooth;
+  /* scroll-padding: 10rem; */
 }
 
 /* width */
@@ -52,6 +53,13 @@ body {
   display: flex !important;
   justify-content: end !important;
   padding-right: 40px;
+}
+
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .swiper-slide-active {
+    justify-content: center !important;
+    padding-right: 0px;
+  }
 }
 
 .myBorder {
