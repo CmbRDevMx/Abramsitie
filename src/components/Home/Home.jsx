@@ -7,12 +7,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
 import "swiper/css/navigation";
-import Banner from "../Banner/Banner";
-import About from "../About/About";
-import Contact from "../Contact/Contact";
-import Service from "../Service/Service";
-import Logo from "../Logo/Logo";
-import Countup from "../Countup/Countup";
+import Banner from "./Banner";
+import About from "./About";
+import Contact from "./Contact";
+import Service from "./Service";
+import Logo from "./Logo";
+import Countup from "./Countup";
 import { Navigation } from "swiper/modules";
 
 function Home() {
