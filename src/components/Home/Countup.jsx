@@ -48,9 +48,9 @@ function Countup() {
   }, []);
   return (
     <div className="relative">
-      <section className="banner container lg:max-w-[1236px] px-3 pt-[50px] lg:px-2 mx-auto flex flex-col md:flex-row items-center">
-        <div className="space-y-5 md:w-1/2 md:pr-8">
-          <h2 ref={h2Ref1} className="blog_heading">
+      <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center">
+        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8">
+          <h2 ref={h2Ref1} className="blog_heading py-5">
             {isVisible1 ? <CountUp end={427} /> : "427%"}%
           </h2>
           <h2 className=" blog_heading2 ">Brand Awareness</h2>
@@ -70,20 +70,20 @@ function Countup() {
         </div>
       </section>
 
-      <section className="banner container lg:max-w-[1236px] px-3 pt-[50px] lg:px-2 mx-auto flex flex-col md:flex-row items-center">
+      <section className="banner container text-center px-3 pt-[50px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center">
         <div className="mt-8 md:mt-0 md:w-1/2">
           <img src="/img/brand_awareness_c2.png" alt="" className="w-full" />
         </div>
-        <div className="space-y-5 md:w-1/2 md:pr-8 text-right">
-          <h2 ref={h2Ref2} className="blog_heading">
+        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right">
+          <h2 ref={h2Ref2} className="blog_heading py-5">
             {isVisible2 ? <CountUp end={68} /> : "68%"}%
           </h2>
-          <h2 className="blog_heading2">Retargeting</h2>
+          <h2 className="blog_heading2 pb-2">Retargeting</h2>
           <p>
             Tor msai khai is a realy good way to descripe.Tor msai khai is a
             realy good way to descripe.Tor msai .
           </p>
-          <div className="flex justify-center md:justify-end pb-[50px]">
+          <div className="pt-2 flex justify-center md:justify-end pb-[50px]">
             <button className="flex items-center justify-center md:justify-start text-center md:text-left text-[18px] font-semibold leading-[22px] underline rounded-full">
               View Case Study
             </button>
@@ -91,18 +91,18 @@ function Countup() {
         </div>
       </section>
 
-      <section className=" container lg:max-w-[1236px] px-3 pt-[50px] lg:px-2 mx-auto flex flex-col md:flex-row items-center justify-between">
+      <section className=" container text-center md:text-left px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 md:pr-8">
-          <div className="space-y-5">
+          <div className="md:space-y-5 2xl:space-y-6">
             <h2 ref={h2Ref3} className="blog_heading">
               {isVisible3 ? <CountUp end={128} /> : "128%"}%
             </h2>
-            <h2 className="blog_heading2">Qualitative Research</h2>
+            <h2 className="blog_heading2 pb-2">Qualitative Research</h2>
             <p>
               Tor msai khai is a really good way to describe. Tor msai khai is a
               really good way to describe. Tor msai.
             </p>
-            <div className="flex justify-center md:justify-start pb-8 md:pb-0">
+            <div className="flex justify-center md:justify-start pt-5 pb-8 md:pb-0">
               <button className="flex items-center justify-center md:justify-start text-center md:text-left text-[18px] font-semibold leading-[22px] underline rounded-full">
                 View Case Study
               </button>

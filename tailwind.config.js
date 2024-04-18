@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customGreen: '#81C250',
+        customGreen: '#4169E1',
       },
+      fontFamily: {
+        raleway: ["Raleway"]
+      }
     },
   },
   plugins: [],
 }
-

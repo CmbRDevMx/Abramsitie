@@ -11,7 +11,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="banner container lg:max-w-[1236px] px-3 lg:px-2 mx-auto text-center bg-black rounded-xl py-[80px] mb-[50px]"
+      className="banner container px-3 lg:px-2 mx-auto text-center bg-black md:rounded-xl py-14 md:py-[80px]  my-14 md:my-24  2xl:my-32"
     >
       <div className="relative space-y-4">
         {/* LinkedIn icon */}
@@ -25,7 +25,7 @@ function Contact() {
         {/* Facebook icon */}
         <FaFacebook className="absolute bg-white text-[38px] rounded-md top-[2rem] right-[7rem] transform rotate-12 text-blue-700 hidden lg:block" />
 
-        <p className="text-[24px] font-medium mx-auto lg:max-w-[726px] text-white">
+        <p className="text-xl md:text-2xl font-medium mx-auto lg:max-w-[726px] text-white">
           Schedule a free call below to find out how we can take your personal
           brand to 6-figures!
         </p>
@@ -34,7 +34,7 @@ function Contact() {
           <FaTiktok className="absolute bg-white text-[40px] top-[2rem] left-[14rem] rounded-full transform rotate-12 hidden lg:block" />
 
           {/* Call button */}
-          <button className="flex items-center btn py-[10px] px-[30px] rounded-md">
+          <button className="flex items-center btn mt-6 md:mt-4 py-[10px] px-[30px] rounded-md">
             Book a call <FaPhoneAlt />
           </button>
 

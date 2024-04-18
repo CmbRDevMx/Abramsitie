@@ -33,7 +33,7 @@ function Service() {
   ];
 
   return (
-    <section className="bg-customGreen">
+    <section className="bg-black text-white">
       <div
         id="service"
         className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto py-[50px]"
@@ -41,8 +41,9 @@ function Service() {
         <h1 className="main_heading">A wide range of services</h1>
       </div>
       <div className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {serviceData.map((service) => (
+        {serviceData.map((service, index) => (
           <Popover
+            key={index}
             content={
               <div className="max-w-[420px] rounded-3xl bg-[#FAFAFA59] px-4 2xl:px-8 py-6 2xl:py-10">
                 <h2 className="text-2xl font-bold">{service?.title}</h2>
@@ -63,7 +64,7 @@ function Service() {
         ))}
       </div>
       <div className="flex justify-center pb-[50px] ">
-        <button className="btn flex items-center bg-black text-white py-[10px] px-[30px] rounded-xl">
+        <button className="btn flex items-center bg-customGreen text-white py-[10px] px-[30px] rounded-xl">
           Learn More <FaArrowRightLong />
         </button>
       </div>

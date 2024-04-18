@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
@@ -11,12 +11,12 @@ import Banner from "./Banner";
 import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
-import Logo from "./Logo";
+import Logos from "./Logo";
 import Countup from "./Countup";
 import { Navigation } from "swiper/modules";
 
 function Home() {
-  const imageData1 = [
+  const imageData = [
     {
       imageUrl: "img/comment_1_1.png",
       title: "Holden Caulfield 1",
@@ -35,8 +35,6 @@ function Home() {
       description:
         "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     },
-  ];
-  const imageData2 = [
     {
       imageUrl: "img/comment_2_1.png",
       title: "Holden Caulfield 1",
@@ -49,8 +47,6 @@ function Home() {
       description:
         "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     },
-  ];
-  const imageData3 = [
     {
       imageUrl: "img/comment_3_1.png",
       title: "Holden Caulfield 1",
@@ -69,8 +65,6 @@ function Home() {
       description:
         "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     },
-  ];
-  const imageData4 = [
     {
       imageUrl: "img/comment_4_1.png",
       title: "Holden Caulfield 1",
@@ -109,10 +103,10 @@ function Home() {
   };
 
   return (
-    <>
+    <div className="font-raleway">
       <Banner />
 
-      <Logo />
+      <Logos />
 
       <About />
 
@@ -120,10 +114,10 @@ function Home() {
 
       <Countup />
 
-      <div className="relative">
+      <div className="relative pt-16 md:pt-24 2xl:pt-32">
         {/* tastaimonial */}
 
-        <section className=" container lg:max-w-[1236px] px-3 lg:px-2 mx-auto pt-[50px] space-y-5 text-center">
+        <section className=" container px-3 lg:px-2 mx-auto  space-y-5 text-center">
           <h1 className="main_heading ">See what others are saying</h1>
           <p className="lg:max-w-[645px] mx-auto">
              Lorem Ipsum has been the industry's text ever has been the
@@ -189,8 +183,8 @@ function Home() {
       </div>
 
       {/* creative work */}
-      <div className="relative">
-        <section className="relative select-none container lg:max-w-[1236px] px-3 lg:px-2 mx-auto pt-[50px] space-y-5 text-center pb-[50px]">
+      <div className="relative  pt-16 md:pt-24 2xl:pt-32">
+        <section className="relative select-none container lg:max-w-[1236px] px-3 lg:px-2 mx-auto space-y-5 text-center">
           <h1 className="main_heading">Some of our creative work</h1>
           <p className="mx-auto lg:max-w-[645px]">
             Lorem Ipsum has been the industry's text ever has been the
@@ -201,79 +195,26 @@ function Home() {
               Book a call <FaPhoneAlt />
             </button>
           </div>
-
-          <div className="mx-auto lg:h-[110dvh] max-w-[350px] md:max-w-[660px] lg:max-w-[860px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="col-span-1 h-auto flex flex-col gap-2.5 justify-center items-center">
-              {imageData1.map((img) => (
-                <div class="flex cursor-pointer w-full h-[50dvh] overflow-hidden lg:h-full relative">
-                  <img
-                    alt="gallery"
-                    class="absolute inset-0 object-center h-auto lg:h-full w-full object-cover group-hover:opacity-50"
-                    src={img.imageUrl}
-                  />
-                  <div class="p-5 flex items-center justify-center flex-col text-center text-gray-100 relative z-10 h-full w-full bg-black/80 transition-all duration-500 opacity-0 hover:opacity-100">
-                    <h1 class="text-lg font-bold ">{img?.title}</h1>
-                    <p class="text-sm pt-2">{img?.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="col-span-1 flex flex-col gap-2.5 justify-center items-center">
-              {imageData2.map((img) => (
-                <div class="flex cursor-pointer w-full  h-[50dvh] overflow-hidden lg:h-full relative">
-                  <img
-                    alt="gallery"
-                    class="absolute inset-0 object-center h-auto lg:h-full w-full object-cover group-hover:opacity-50"
-                    src={img.imageUrl}
-                  />
-                  <div class="p-5 flex items-center justify-center flex-col text-center text-gray-100 relative z-10 h-full w-full bg-black/80 transition-all duration-500 opacity-0 hover:opacity-100">
-                    <h1 class="text-lg font-bold ">{img?.title}</h1>
-                    <p class="text-sm pt-2">{img?.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="col-span-1 flex flex-col gap-2.5 justify-center items-center">
-              {imageData3.map((img, index) => (
-                <div
-                  class={`flex cursor-pointer w-full ${
-                    index === 1
-                      ? " h-[50dvh] overflow-hidden lg:h-auto"
-                      : " h-[50dvh] overflow-hidden lg:h-full"
-                  } relative`}
-                >
-                  <img
-                    alt="gallery"
-                    class="absolute inset-0 object-center h-auto lg:h-full w-full object-cover group-hover:opacity-50"
-                    src={img.imageUrl}
-                  />
-                  <div class="p-5 flex items-center justify-center flex-col text-center text-gray-100 relative z-10 h-full w-full bg-black/80 transition-all duration-500 opacity-0 hover:opacity-100">
-                    <h1 class="text-lg font-bold ">{img?.title}</h1>
-                    <p class="text-sm pt-2">{img?.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="col-span-1 flex flex-col gap-2.5 justify-center items-center">
-              {imageData4.map((img) => (
-                <div class="flex cursor-pointer w-full  h-[50dvh] overflow-hidden lg:h-full relative">
-                  <img
-                    alt="gallery"
-                    class="absolute inset-0 object-center h-auto lg:h-full w-full object-cover group-hover:opacity-50"
-                    src={img.imageUrl}
-                  />
-                  <div class="p-5 flex items-center justify-center flex-col text-center text-gray-100 relative z-10 h-full w-full bg-black/80 transition-all duration-500 opacity-0 hover:opacity-100">
-                    <h1 class="text-lg font-bold ">{img?.title}</h1>
-                    <p class="text-sm pt-2">{img?.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
+        <div className="mx-4 md:mx-8 2xl:mx-10 lg:h-[120dvh] grid grid-cols-1 md:grid-cols-4 gap-1">
+          {imageData.slice(0, 8).map((img) => (
+            <div className="flex cursor-pointer w-full h-[50dvh] overflow-hidden lg:h-full relative">
+              <img
+                alt="gallery"
+                className="absolute inset-0 object-center h-auto lg:h-full w-full object-cover group-hover:opacity-50"
+                src={img.imageUrl}
+              />
+
+              <div className="p-5 flex items-center justify-center flex-col text-center text-gray-100 relative z-10 h-full w-full bg-black/80 transition-all duration-500 opacity-0 hover:opacity-100">
+                <h1 className="text-lg font-bold ">{img?.title}</h1>
+                <p className="text-sm pt-2">{img?.description}</p>
+                <button className="bg-customGreen text-white rounded-full px-4 py-1 text-sm md:text-base font-medium mt-2.5">
+                  View case study
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
 
         <img
           src="/img/shadow.png"
@@ -288,7 +229,7 @@ function Home() {
       </div>
 
       <Contact />
-    </>
+    </div>
   );
 }
 
