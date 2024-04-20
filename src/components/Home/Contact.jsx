@@ -11,7 +11,9 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="banner container px-3 lg:px-2 mx-auto text-center bg-black md:rounded-xl py-14 md:py-[80px]  my-14 md:my-24  2xl:my-32"
+      className="banner container px-3 lg:px-2 mx-auto text-center bg-black md:rounded-xl py-14 md:py-[80px]  mb-14 md:mb-24  2xl:mb-32"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       <div className="relative space-y-4">
         {/* LinkedIn icon */}

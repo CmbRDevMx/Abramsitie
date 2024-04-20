@@ -1,7 +1,13 @@
+import Aos from "aos";
 import React, { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup";
+import "aos/dist/aos.css";
 
 function Countup() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   // State variables for visibility of each section
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
@@ -46,10 +52,15 @@ function Countup() {
       if (h2Ref3.current) observer3.unobserve(h2Ref3.current);
     };
   }, []);
+
   return (
     <div className="relative">
       <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center">
-        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8">
+        <div
+          className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <h2 ref={h2Ref1} className="blog_heading py-5">
             {isVisible1 ? <CountUp end={427} /> : "427%"}%
           </h2>
@@ -65,16 +76,28 @@ function Countup() {
             </button>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 md:w-1/2">
+        <div
+          className="mt-8 md:mt-0 md:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <img src="/img/brand_awareness_c1.png" alt="" className="w-full" />
         </div>
       </section>
 
       <section className="banner container text-center px-3 pt-[50px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center">
-        <div className="mt-8 md:mt-0 md:w-1/2">
+        <div
+          className="mt-8 md:mt-0 md:w-1/2"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <img src="/img/brand_awareness_c2.png" alt="" className="w-full" />
         </div>
-        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right">
+        <div
+          className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <h2 ref={h2Ref2} className="blog_heading py-5">
             {isVisible2 ? <CountUp end={68} /> : "68%"}%
           </h2>
@@ -92,7 +115,11 @@ function Countup() {
       </section>
 
       <section className=" container text-center md:text-left px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-1/2 md:pr-8">
+        <div
+          className="md:w-1/2 md:pr-8"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div className="md:space-y-5 2xl:space-y-6">
             <h2 ref={h2Ref3} className="blog_heading">
               {isVisible3 ? <CountUp end={128} /> : "128%"}%
@@ -109,7 +136,11 @@ function Countup() {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 flex items-end ">
+        <div
+          className="md:w-1/2 flex items-end "
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <img
             src="/img/wepik-export-20240331113312uh3q_1.png"
             alt=""

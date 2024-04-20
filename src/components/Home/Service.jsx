@@ -1,9 +1,15 @@
 import { Popover } from "antd";
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoCallOutline } from "react-icons/io5";
+import "aos/dist/aos.css";
 
 function Service() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   const serviceData = [
     {
       title: "Paid Ads",
@@ -37,10 +43,16 @@ function Service() {
       <div
         id="service"
         className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto py-[50px]"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       >
         <h1 className="main_heading">A wide range of services</h1>
       </div>
-      <div className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div
+        className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         {serviceData.map((service, index) => (
           <Popover
             key={index}
@@ -63,7 +75,11 @@ function Service() {
           </Popover>
         ))}
       </div>
-      <div className="flex justify-center pb-[50px] ">
+      <div
+        className="flex justify-center pb-[50px] "
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <button className="btn flex items-center bg-customGreen text-white py-[10px] px-[30px] rounded-xl">
           Learn More <FaArrowRightLong />
         </button>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
@@ -14,8 +14,14 @@ import Service from "./Service";
 import Logos from "./Logo";
 import Countup from "./Countup";
 import { Navigation } from "swiper/modules";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   const imageData = [
     {
       imageUrl: "img/comment_1_1.png",
@@ -110,14 +116,45 @@ function Home() {
 
       <About />
 
+      <div
+        className="py-16 md:py-24 2xl:py-32 overflow-hidden"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div className="max-h-screen overflow-hidden">
+          <img
+            src="/img/banner1.png"
+            alt=""
+            className="hover:scale-150 transition-all duration-[2000ms]"
+          />
+        </div>
+      </div>
+
       <Service />
 
       <Countup />
 
-      <div className="relative pt-16 md:pt-24 2xl:pt-32">
+      <div
+        className="py-16 md:py-24 2xl:py-32 overflow-hidden"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div className="max-h-screen overflow-hidden">
+          <img
+            src="/img/banner1.png"
+            alt=""
+            className="hover:scale-150 transition-all duration-[2000ms]"
+          />
+        </div>
+      </div>
+
+      <div className="relative">
         {/* tastaimonial */}
 
-        <section className=" container px-3 lg:px-2 mx-auto  space-y-5 text-center">
+        <section
+          className=" container px-3 lg:px-2 mx-auto  space-y-5 text-center"
+          data-aos="fade-up"
+        >
           <h1 className="main_heading ">See what others are saying</h1>
           <p className="lg:max-w-[645px] mx-auto">
              Lorem Ipsum has been the industry's text ever has been the
@@ -131,8 +168,12 @@ function Home() {
         </section>
 
         {/* review section */}
-
-        <section className="relative review container mx-auto pb-10 md:pb-0">
+        <section
+          className="relative review container mx-auto pb-10 md:pb-0"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <HiArrowLeft className="absolute swiper-testimonial-prev cursor-pointer z-10 left-2 md:left-20 text-lg md:text-4xl font-bold top-1/2" />
           <HiArrowRight className="absolute swiper-testimonial-next cursor-pointer z-10 right-2 md:right-20 text-lg md:text-4xl font-bold top-1/2" />
           <Swiper
@@ -184,7 +225,10 @@ function Home() {
 
       {/* creative work */}
       <div className="relative  pt-16 md:pt-24 2xl:pt-32">
-        <section className="relative select-none container lg:max-w-[1236px] px-3 lg:px-2 mx-auto space-y-5 text-center">
+        <section
+          className="relative select-none container lg:max-w-[1236px] px-3 lg:px-2 mx-auto space-y-5 text-center"
+          data-aos="fade-up"
+        >
           <h1 className="main_heading">Some of our creative work</h1>
           <p className="mx-auto lg:max-w-[645px]">
             Lorem Ipsum has been the industry's text ever has been the
@@ -196,7 +240,13 @@ function Home() {
             </button>
           </div>
         </section>
-        <div className="mx-4 md:mx-8 2xl:mx-10 lg:h-[120dvh] grid grid-cols-1 md:grid-cols-4 gap-1">
+
+        <div
+          className="mx-4 md:mx-8 2xl:mx-10 lg:h-[120dvh] grid grid-cols-1 md:grid-cols-4 gap-1"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           {imageData.slice(0, 8).map((img) => (
             <div className="flex cursor-pointer w-full h-[50dvh] overflow-hidden lg:h-full relative">
               <img
@@ -226,6 +276,20 @@ function Home() {
           className="hidden md:block absolute right-0 top-0 -z-10"
           alt=""
         />
+      </div>
+
+      <div
+        className="py-16 md:py-24 2xl:py-32 overflow-hidden"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div className="max-h-screen overflow-hidden">
+          <img
+            src="/img/banner1.png"
+            alt=""
+            className="hover:scale-150 transition-all duration-[2000ms]"
+          />
+        </div>
       </div>
 
       <Contact />

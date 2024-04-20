@@ -3,7 +3,11 @@ import React from "react";
 function Logos() {
   return (
     <>
-      <section class="container px-4  mx-auto flex justify-between items-center gap-1 md:gap-4 py-4 md:py-8">
+      <section
+        className="container px-4  mx-auto flex justify-between items-center gap-1 md:gap-4 py-4 md:py-8"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <img
           src="img/Litter-Robot-Logo_1.png"
           alt=""
