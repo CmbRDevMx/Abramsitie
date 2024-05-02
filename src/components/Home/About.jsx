@@ -33,8 +33,15 @@ function About() {
         <div className="space-y-7">
           <h1 className="main_heading text-center md:text-left">What We Do</h1>
           <p className="text-center md:text-left">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the text ever since theever since.
+            At CST Social Marketing, we specialize in crafting and executing
+            precision marketing strategies that resonate with your target
+            audience.
+            <br />
+            <br />
+            By leveraging qualitative research, we uncover the intricacies of
+            your audience's preferences and behaviors, empowering us to create
+            campaigns that deliver tangible results. Our objective ensures your
+            brand reaches the right people with the right message, every time
           </p>
           <div className="flex justify-center md:justify-start pb-[50px]">
             <button className="flex items-center btn py-1.5 md:py-[10px] px-7 md:px-[30px] rounded-full">

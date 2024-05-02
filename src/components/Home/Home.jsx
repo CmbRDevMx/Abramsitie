@@ -1,21 +1,15 @@
 import React, { useEffect } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import { FaPhoneAlt } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
-import "swiper/css";
-import "swiper/css/navigation";
 import Banner from "./Banner";
 import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
 import Logos from "./Logo";
 import Countup from "./Countup";
-import { Navigation } from "swiper/modules";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Testimonial from "./Testimonial";
 
 function Home() {
   useEffect(() => {
@@ -91,23 +85,6 @@ function Home() {
     },
   ];
 
-  const sliderData = [1, 2, 3, 4, 5, 6, 7, 8, 13, 14, 15, 16, 17, 18];
-
-  const breakpoints = {
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // centeredSlides: true,
-    },
-    // when window width is >= 1024px
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      // centeredSlides: false,
-    },
-  };
-
   return (
     <div className="font-raleway">
       <Banner />
@@ -148,80 +125,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="relative">
-        {/* tastaimonial */}
-
-        <section
-          className=" container px-3 lg:px-2 mx-auto  space-y-5 text-center"
-          data-aos="fade-up"
-        >
-          <h1 className="main_heading ">See what others are saying</h1>
-          <p className="lg:max-w-[645px] mx-auto">
-             Lorem Ipsum has been the industry's text ever has been the
-            industry's standard dummy text ever since the text ever since the
-          </p>
-          <div className="flex justify-center md:justify-center pb-[50px] ">
-            <button className="flex items-center btn py-[10px] px-[30px] rounded-md">
-              Learn More <FaArrowRightLong />
-            </button>
-          </div>
-        </section>
-
-        {/* review section */}
-        <section
-          className="relative review container mx-auto pb-10 md:pb-0"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-        >
-          <HiArrowLeft className="absolute swiper-testimonial-prev cursor-pointer z-10 left-2 md:left-20 text-lg md:text-4xl font-bold top-1/2" />
-          <HiArrowRight className="absolute swiper-testimonial-next cursor-pointer z-10 right-2 md:right-20 text-lg md:text-4xl font-bold top-1/2" />
-          <Swiper
-            className="mySwiper"
-            // spaceBetween={10}
-            // slidesPerView={2}
-            breakpoints={breakpoints}
-            centeredSlides={false}
-            navigation={{
-              nextEl: ".swiper-testimonial-next",
-              prevEl: ".swiper-testimonial-prev",
-            }}
-            modules={[Navigation]}
-            pagination={{ clickable: true }}
-            // onSlideChange={() => console.log("slide change")}
-          >
-            {sliderData.map((slder) => (
-              <SwiperSlide className="flex select-none justify-center py-2">
-                <div className="myBorder rounded-md px-5 py-4 max-w-[300px] lg:max-w-[350px] space-y-4">
-                  <h4 className="text-xl font-semibold">
-                    “We approached Vlad to help us with the design of our new
-                    startup’s app. Vlad was exemplary in understanding the
-                    product and strategizing with us.”
-                  </h4>
-                  <div className="flex justify-center md:justify-start pt-4">
-                    <img
-                      src="img/Ellipse_1.png"
-                      alt=""
-                      className="w-10 h-10 mr-2"
-                    />
-                    <img src="img/Ellipse_2.png" alt="" className="w-10 h-10" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">David Oivas</p>
-                    <p className="text-sm">Marketing partner at Kera Dering</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </section>
-
-        <img
-          src="/img/shadow.png"
-          className="hidden md:block absolute left-0 -top-1/2 opacity-50 -z-10"
-          alt=""
-        />
-      </div>
+      {/* testimonial section here  */}
+      <Testimonial />
 
       {/* creative work */}
       <div className="relative  pt-16 md:pt-24 2xl:pt-32">

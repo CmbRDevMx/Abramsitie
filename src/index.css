@@ -6,7 +6,7 @@
 
 @layer components {
   .main_heading {
-    @apply lg:leading-[74px] md:leading-[64px] font-semibold	lg:text-[64px] md:text-[52px] text-4xl;
+    @apply 2xl:leading-[74px] md:leading-[64px] font-raleway font-semibold	2xl:text-[64px] md:text-[52px] text-4xl;
   }
 
   .services_heading {

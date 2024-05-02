@@ -12,29 +12,44 @@ function Service() {
 
   const serviceData = [
     {
-      title: "Paid Ads",
+      title: "Qualitative Research",
       description:
-        " Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+        "At CST Social Marketing, we utilize qualitative research to unlock valuable insights into your target audience's preferences. By conducting interviews, focus groups, and observational studies, we gain a deep understanding of what motivates your audience. This allows us to tailor your marketing strategy and campaigns with creative designs & messaging with precision.",
     },
     {
-      title: "Target Audience Research",
+      title: "Social Media Paid Ads",
       description:
-        "Unlock the secrets of your audience with CST's Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+        "Maximize your impact on social media with CST's paid advertisement service. Harness the power of platforms like Facebook, Instagram, TiK Tok, and X to reach your target audience with precision. Our team crafts visually stunning ads that drive engagement, conversions, and results, all while optimizing your advertising budget for maximum ROI.",
     },
     {
-      title: "Google Ads",
+      title: "Google Paid Ads",
       description:
-        "Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+        "Boost your online presence with CST's Google Paid Ads Service. Reach customers at the moment they're searching for what you offer with targeted ads on Google. From search to display, our team creates compelling campaigns that drive traffic, leads, and conversions, putting your business front and center on the digital stage.",
     },
     {
-      title: "Billboard Ads",
+      title: "Email & Direct Mail",
       description:
-        "Stand tall and grab attention with CST's Advertisement Service. Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+        "CST Social Marketing's Email and Direct Mail Marketing Services are designed to maximize your marketing impact. Whether it's delivering targeted email campaigns or designing eye-catching direct mail pieces, we help you reach your audience with precision, driving results and amplifying your brand's visibility.",
+    },
+    {
+      title: "Video Production",
+      description:
+        "At CST Social Marketing, we specialize in bringing your brand's story to life through captivating video production. From concept to execution, our team specializes in creating memorable brand experiences that leave a lasting impression on your audience, driving brand awareness and affinity.",
+    },
+    {
+      title: "Billboard Advertisement",
+      description:
+        "Stand tall and grab attention with CST's Billboard Advertisement Service. Whether it's towering over highways or dominating cityscapes, let us showcase your brand where it counts. Increase visibility, leave a memorable impression, and drive traffic to your business with our expertly crafted billboards.",
+    },
+    {
+      title: "Brand Management",
+      description:
+        "Trust CST Social Marketing to manage your brand's reputation with finesse. Our dedicated team employs advanced monitoring tools and strategic interventions to uphold your brand's integrity online. Whether it's combating negative reviews  or amplifying positive feedback, we're committed to preserving and strengthening your brand's reputation in the digital sphere.",
     },
     {
       title: "Marketing Consulting",
       description:
-        "Let our seasoned experts guide you. Stand tall and grab attention with CST's Advertisement Service. Qualitative Research Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service. Boost your online presence with CST's Google Paid Ads Service.",
+        "Unlock the full potential of your brand with CST Social Marketing's Marketing Consultation services. Our team of seasoned professionals collaborates closely with you to understand your goals, challenges, and unique market position, delivering personalized insights and strategies to propel your brand forward.",
     },
   ];
 
@@ -60,11 +75,11 @@ function Service() {
               <div className="max-w-[420px] rounded-3xl bg-[#FAFAFA59] px-4 2xl:px-8 py-6 2xl:py-10">
                 <h2 className="text-2xl font-bold">{service?.title}</h2>
                 <p className="py-4">{service?.description}</p>
-                <div className="flex items-center justify-center">
+                {/* <div className="flex items-center justify-center">
                   <button className="text-sm 2xl:text-base flex items-center gap-2 font-medium text-white btn px-4 py-2 rounded-xl">
                     Book a call <IoCallOutline />
                   </button>
-                </div>
+                </div> */}
               </div>
             }
           >
