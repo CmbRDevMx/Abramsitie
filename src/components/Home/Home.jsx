@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { FaPhoneAlt } from "react-icons/fa";
 import Banner from "./Banner";
@@ -10,10 +10,21 @@ import Countup from "./Countup";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Testimonial from "./Testimonial";
+import AppModal from "../Shared/AppModal";
 
 function Home() {
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
     Aos.init();
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 60000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const imageData = [
@@ -94,7 +105,7 @@ function Home() {
       <About />
 
       <div
-        className="py-16 md:py-24 2xl:py-32 overflow-hidden"
+        className="pb-16 mt-16 md:pb-24 md:mt-24  2xl:mt-32 2xl:pb-32 overflow-hidden bg-black"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
@@ -198,6 +209,22 @@ function Home() {
       </div>
 
       <Contact />
+
+      <AppModal modalOpen={open} setModalOpen={setOpen}>
+        <div className="bg-black text-center text-white p-10 md:p-16 2xl:p-20 lg:max-w-[1024px] max-h-[80dvh] overflow-auto mx-auto">
+          <h2 className="text-5xl font-bold">
+            Are you looking to scale your business through online marketing?
+          </h2>
+          <h4 className="text-2xl font-semibold pt-6 pb-12">
+            Book a free consultation call to see how CST can help you
+          </h4>
+          <div className="flex justify-center md:justify-center">
+            <button className="flex items-center btn py-[10px] px-[30px] rounded-md">
+              Book a call <FaPhoneAlt />
+            </button>
+          </div>
+        </div>
+      </AppModal>
     </div>
   );
 }

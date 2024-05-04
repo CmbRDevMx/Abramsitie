@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customGreen: '#4169E1',
+        customGreen: '#2337c6',
+        // customGreen: '#4169E1',
       },
       fontFamily: {
         raleway: ["Raleway"]

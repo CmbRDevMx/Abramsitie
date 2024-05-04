@@ -4,15 +4,15 @@ function Banner() {
   return (
     <section id="home" className="relative">
       <div
-        className="banner container px-4 lg:px-2 mx-auto flex flex-col md:flex-row items-center"
+        className="banner container px-4 lg:px-2 mx-auto flex flex-col justify-between md:flex-row items-center"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="mt-8 md:mt-0 space-y-3 md:space-y-5 md:w-1/2 md:pr-8">
+        <div className="mt-8 md:mt-0 space-y-3 md:space-y-5 2xl:space-y-8 md:w-[43%]">
           <h1 className="main_heading ">
             CST Social Marketing: Where Visibility Meets Desire
           </h1>
-          <p>
+          <p className="2xl:text-xl">
             Finding your ideal customers in a crowded digital market is our
             specialty. CST Social Marketing uses Qualitative research to place
             your products or services in front of your target audience.
@@ -23,7 +23,7 @@ function Banner() {
             </button>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 md:w-1/2">
+        <div className="mt-8 md:mt-0 md:w-[55%]">
           <img src="/img/banner.png" alt="" className="w-full" />
         </div>
       </div>

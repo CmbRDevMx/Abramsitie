@@ -67,3 +67,42 @@ html {
 .myBorder {
   box-shadow: 0px 1px 5px 0px #00000040;
 }
+
+/* this is for antd custom design   */
+.ant-modal-header .ant-modal-title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  /* background-color: #4169e1 !important;
+  padding: 20px !important; */
+}
+
+.ant-modal-close-x {
+  /* color: #f1f1f1 !important; */
+}
+
+.ant-modal {
+  width: fit-content !important;
+}
+
+.ant-modal-content {
+  border-radius: 0px !important;
+  width: fit-content !important;
+  margin: auto !important;
+  padding: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .ant-modal-header .ant-modal-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+  }
+  .ant-modal-content {
+    border-radius: 0px !important;
+  }
+}
+
+.line {
+  background-color: #4169e1;
+  width: 20px;
+  height: 24px;
+}
