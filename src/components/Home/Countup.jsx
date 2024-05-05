@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import "aos/dist/aos.css";
 import AppModal from "../Shared/AppModal";
 import ViewCaseStudy from "../Shared/ViewCaseStudy";
+import SvgLine from "../SvgLine/SvgLine";
 
 function Countup() {
   useEffect(() => {
@@ -260,7 +261,7 @@ function Countup() {
 
   return (
     <div className="relative">
-      <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center">
+      <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center relative">
         <div
           className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8"
           data-aos="fade-left"
@@ -289,15 +290,20 @@ function Countup() {
           </div>
         </div>
         <div
-          className="mt-8 md:mt-0 md:w-1/2"
+          className="mt-8 md:mt-0 md:w-1/2  "
           data-aos="fade-right"
           data-aos-duration="1500"
         >
           <img src="/img/brand_awareness_c1.png" alt="" className="w-full" />
         </div>
+        <SvgLine
+          path="M0.500977 0V509.5C0.500977 526.069 13.9324 539.5 30.501 539.5H2458C2474.57 539.5 2488 552.932 2488 569.5V1007"
+          svgClassName={" xl:ml-[100px] 2xl:ml-[80px]"}
+          wrapClassName={"  lg:bottom-[-200px] "}
+        ></SvgLine>
       </section>
 
-      <section className="banner container text-center px-3 pt-[50px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center">
+      <section className="banner container text-center px-3 pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative ">
         <div
           className="mt-8 md:mt-0 md:w-1/2"
           data-aos="fade-left"
@@ -330,9 +336,13 @@ function Countup() {
             </AppModal>
           </div>
         </div>
+        <SvgLine
+          svgClassName={"xl:ml-[120px] lg:ml-[100px] 2xl:ml-[130px]"}
+          path="M2488 0V509.5C2488 526.069 2474.57 539.5 2458 539.5H31C14.4314 539.5 0.999955 552.932 0.999955 569.5V1007"
+        ></SvgLine>
       </section>
 
-      <section className=" container text-center md:text-left px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center justify-between">
+      <section className=" container text-center md:text-left px-3 pt-[240px] lg:px-8 mx-auto flex flex-col md:flex-row items-center justify-between">
         <div
           className="md:w-1/2 md:pr-8"
           data-aos="fade-left"

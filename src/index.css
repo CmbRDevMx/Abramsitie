@@ -100,9 +100,6 @@ html {
     border-radius: 0px !important;
   }
 }
-
-.line {
-  background-color: #4169e1;
-  width: 20px;
-  height: 24px;
-}
+ .svg-path1{
+  stroke-dasharray: 0;
+ }
