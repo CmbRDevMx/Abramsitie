@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
-
-import { FaPhoneAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaLinkedin,
+  FaFacebook,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 import Banner from "./Banner";
 import About from "./About";
 import Contact from "./Contact";
@@ -211,7 +217,44 @@ function Home() {
       <Contact />
 
       <AppModal modalOpen={open} setModalOpen={setOpen}>
-        <div className="bg-black text-center text-white p-10 md:p-16 2xl:p-20 lg:max-w-[1024px] max-h-[80dvh] overflow-auto mx-auto">
+        <section
+          id="contact"
+          className="bg-black text-center text-white p-10 md:p-16 2xl:p-20 lg:w-[1424px] h-[56dvh] overflow-auto mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div className="relative space-y-4">
+            {/* LinkedIn icon */}
+            <FaLinkedin className="absolute text-[38px] transform rotate-45 left-[7rem] top-20 text-blue-100 hidden lg:block" />
+
+            {/* Instagram icon */}
+            <BsInstagram className="absolute bg-red-500 text-[38px] rounded-md top-[-3rem] left-[18rem] transform rotate-12 text-white hidden lg:block" />
+
+            <h2 className="main_heading text-white">
+              Are you looking to scale your business through online marketing?
+            </h2>
+
+            {/* Facebook icon */}
+            <FaFacebook className="absolute bg-white text-[38px] rounded-md top-[4rem] right-[7rem] transform rotate-12 text-blue-700 hidden lg:block" />
+
+            <p className="text-xl md:text-2xl font-medium mx-auto lg:max-w-[726px] text-white">
+              Book a free consultation call to see how CST can help you!
+            </p>
+            <div className="flex justify-center md:justify-center pb-[50px] relative ">
+              {/* TikTok icon */}
+              <FaTiktok className="absolute bg-white text-[40px] top-[2rem] left-[14rem] rounded-full transform rotate-12 hidden lg:block" />
+
+              {/* Call button */}
+              <button className="flex items-center btn mt-6 md:mt-4 py-[10px] px-[30px] rounded-md">
+                Book a call <FaPhoneAlt />
+              </button>
+
+              {/* Twitter icon */}
+              <FaTwitter className="absolute text-blue-500 text-[38px] top-[2rem] right-[14rem] transform rotate-12 hidden lg:block" />
+            </div>
+          </div>
+        </section>
+        {/* <div className="bg-black text-center text-white p-10 md:p-16 2xl:p-20 lg:max-w-[1024px] max-h-[80dvh] overflow-auto mx-auto">
           <h2 className="text-5xl font-bold">
             Are you looking to scale your business through online marketing?
           </h2>
@@ -223,7 +266,7 @@ function Home() {
               Book a call <FaPhoneAlt />
             </button>
           </div>
-        </div>
+        </div> */}
       </AppModal>
     </div>
   );
