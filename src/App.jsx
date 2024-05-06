@@ -11,11 +11,11 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 }
 
