@@ -83,7 +83,7 @@ function Logos() {
                   <img
                     src={img}
                     alt=""
-                    className="max-w-14 md:max-w-32 2xl:max-w-[150px] object-contain grayscale-0"
+                    className="max-w-20 md:max-w-40 2xl:max-w-[180px] object-contain grayscale-0"
                   />
                 </div>
               );
