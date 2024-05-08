@@ -100,8 +100,8 @@ function Home() {
         <section
           id="contact"
           className="bg-black text-center text-white p-10 md:p-14 2xl:p-20 w-[360px]  lg:w-[1124px] 2xl:w-[1424px] lg:h-[70.5dvh] 2xl:h-[56dvh] overflow-auto mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="1500"
+          // data-aos="fade-up"
+          // data-aos-duration="1500"
         >
           <div className="relative space-y-4">
             {/* LinkedIn icon */}
