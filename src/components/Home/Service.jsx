@@ -70,7 +70,7 @@ function Service() {
     <section className="bg-black text-white relative">
       <img
         src="/img/shadow-right.png"
-        className="absolute right-0 pointer-events-none  top-[10%] -translate-y-1/2"
+        className="absolute right-0 pointer-events-none  top-[50%] -translate-y-1/2"
         alt=""
       />
       <div
