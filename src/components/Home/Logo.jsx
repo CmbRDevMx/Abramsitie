@@ -64,7 +64,7 @@ function Logos() {
         />
       </section> */}
 
-      <section className="px-10 py-6 md:p-14 2xl:p-20">
+      <section className="px-10 py-6 md:p-14 2xl:p-20 relative">
         <Marquee>
           <div
             data-aos="fade-left"
@@ -90,6 +90,11 @@ function Logos() {
             })}
           </div>
         </Marquee>
+        <img
+          src="/img/shadow-right.png"
+          className="absolute right-0 -top-[40px] -z-10 opacity-80"
+          alt=""
+        />
       </section>
     </>
   );

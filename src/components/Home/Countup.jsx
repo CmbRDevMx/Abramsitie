@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import AppModal from "../Shared/AppModal";
 import ViewCaseStudy from "../Shared/ViewCaseStudy";
 import SvgLine from "../SvgLine/SvgLine";
-
+import burger from "../assets/burger.png";
 function Countup() {
   useEffect(() => {
     Aos.init();
@@ -303,7 +303,7 @@ function Countup() {
         ></SvgLine>
       </section>
 
-      <section className="banner container text-center px-3 pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative ">
+      <section className="banner container text-center px-3 pt-[50px] md:pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative ">
         <div
           className="mt-8 md:mt-0 md:w-1/2"
           data-aos="fade-left"
@@ -342,7 +342,7 @@ function Countup() {
         ></SvgLine>
       </section>
 
-      <section className=" container text-center md:text-left px-3 pt-[240px] lg:px-8 mx-auto flex flex-col md:flex-row items-center justify-between">
+      <section className=" container text-center md:text-left px-3 pt-[50px] md:pt-[240px] lg:px-8 mx-auto flex flex-col md:flex-row items-center justify-between relative">
         <div
           className="md:w-1/2 md:pr-8"
           data-aos="fade-left"
@@ -379,13 +379,19 @@ function Countup() {
           data-aos-duration="1500"
         >
           <img
-            src="/img/wepik-export-20240331113312uh3q_1.png"
-            alt=""
-            className="z-10 lg:mb-2 w-full md:max-w-[400px] mx-auto md:mr-0 shadow"
+            src={burger}
+            alt="burger"
+            className="z-10 lg:mb-2 w-full md:max-w-[550px]  mx-auto md:mr-0 shadow"
           />
         </div>
+        <div className="size-[200px] lg:size-[500px] absolute right-[2.5%] -z-10 blur-[50px] rounded-full bg-[#2337C6]/[0.4]"></div>
       </section>
 
+      <img
+        src="/img/shadow.png"
+        className="absolute left-0 top-[-15%] -z-10 opacity-80"
+        alt=""
+      />
       <img
         src="/img/shadow.png"
         className="absolute left-0 top-1/4 -z-10 opacity-80"

@@ -20,7 +20,7 @@ import AppModal from "../Shared/AppModal";
 import CreativeWork from "./CreativeWork";
 
 function Home() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     Aos.init();
@@ -47,11 +47,11 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="max-h-screen overflow-hidden">
+        <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
           <img
             src="/img/banner1.png"
             alt=""
-            className="hover:scale-150 transition-all duration-[2000ms]"
+            className="hover:scale-150 transition-all h-full w-full object-cover duration-[2000ms]"
           />
         </div>
       </div>
@@ -65,11 +65,11 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="max-h-screen overflow-hidden">
+        <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
           <img
             src="/img/banner1.png"
             alt=""
-            className="hover:scale-150 transition-all duration-[2000ms]"
+            className="hover:scale-150 transition-all h-full w-full object-cover duration-[2000ms]"
           />
         </div>
       </div>
@@ -85,21 +85,25 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="max-h-screen overflow-hidden">
+        <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
           <img
             src="/img/banner1.png"
             alt=""
-            className="hover:scale-150 transition-all duration-[2000ms]"
+            className="hover:scale-150 transition-all h-full w-full object-cover duration-[2000ms]"
           />
         </div>
       </div>
 
       <Contact />
 
-      <AppModal modalOpen={open} setModalOpen={setOpen}>
+      <AppModal
+        cancelButtonProps={{ className: "text-white" }}
+        modalOpen={open}
+        setModalOpen={setOpen}
+      >
         <section
           id="contact"
-          className="bg-black text-center text-white p-10 md:p-14 2xl:p-20 w-[360px]  lg:w-[1124px] 2xl:w-[1424px] lg:h-[70.5dvh] 2xl:h-[56dvh] overflow-auto mx-auto"
+          className="bg-black text-center text-white p-10 md:p-14 2xl:p-20 w-[360px] flex justify-center items-center  lg:w-[1124px] 2xl:w-[1424px] lg:h-[70.5dvh] 2xl:h-[56dvh] overflow-auto mx-auto"
           // data-aos="fade-up"
           // data-aos-duration="1500"
         >

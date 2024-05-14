@@ -11,6 +11,7 @@ const AppModal = ({
   cancelButtonAction,
   modalOpen,
   setModalOpen,
+  cancelButtonProps,
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -30,6 +31,7 @@ const AppModal = ({
         open={modalOpen === undefined ? open : modalOpen}
         onOk={() => handleOpen(false)}
         onCancel={() => handleOpen(false)}
+        cancelButtonProps={{ className: "text-white" }}
         footer={
           primaryButtonTitle || cancelButtonTitle ? (
             <div className="max-w-80 flex items-center justify-center gap-2 lg:pt-2">

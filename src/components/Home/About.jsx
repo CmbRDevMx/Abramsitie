@@ -45,7 +45,7 @@ function About() {
             campaigns that deliver tangible results. Our objective ensures your
             brand reaches the right people with the right message, every time
           </p>
-          <div className="flex justify-center pb-[50px]">
+          <div className="flex justify-center lg:pb-[50px]">
             <button className="flex items-center btn 2xl:text-xl py-2 md:py-2.5 2xl:py-3 px-7 md:px-[30px] rounded-full">
               Learn More <FaArrowRightLong />
             </button>
