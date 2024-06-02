@@ -67,7 +67,7 @@ function Home() {
       >
         <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
           <img
-            src="/img/banner1.png"
+            src="/img/banner2.png"
             alt=""
             className="hover:scale-150 transition-all h-full w-full object-cover duration-[2000ms]"
           />
@@ -87,7 +87,7 @@ function Home() {
       >
         <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
           <img
-            src="/img/banner1.png"
+            src="/img/banner3.png"
             alt=""
             className="hover:scale-150 transition-all h-full w-full object-cover duration-[2000ms]"
           />

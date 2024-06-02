@@ -2,7 +2,6 @@ import { Popover } from "antd";
 import Aos from "aos";
 import React, { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { IoCallOutline } from "react-icons/io5";
 import "aos/dist/aos.css";
 import note from "../assets/note.png";
 import google from "../assets/google.png";
@@ -18,13 +17,13 @@ function Service() {
 
   const serviceData = [
     {
-      title: "Qualitative Research",
+      title: "Target Audience Research",
       description:
         "At CST Social Marketing, we utilize qualitative research to unlock valuable insights into your target audience's preferences. By conducting interviews, focus groups, and observational studies, we gain a deep understanding of what motivates your audience. This allows us to tailor your marketing strategy and campaigns with creative designs & messaging with precision.",
       img: note,
     },
     {
-      title: "Social Media Paid Ads",
+      title: "Amend to read  Pay – Per-Click advertising ",
       description:
         "Maximize your impact on social media with CST's paid advertisement service. Harness the power of platforms like Facebook, Instagram, TiK Tok, and X to reach your target audience with precision. Our team crafts visually stunning ads that drive engagement, conversions, and results, all while optimizing your advertising budget for maximum ROI.",
       img: phone,
@@ -100,7 +99,7 @@ function Service() {
                 </div> */}
                 <div className="overflow-hidden rounded">
                   <img
-                    className="w-full  max-h-[300px] object-cover rounded hover:scale-105 transition-all scale-100 duration-500"
+                    className="w-full  max-h-[350px] object-cover rounded hover:scale-105 transition-all scale-100 duration-500"
                     src={service.img}
                     alt=""
                   />
@@ -121,7 +120,7 @@ function Service() {
         data-aos-duration="1000"
       >
         <button className="btn flex items-center bg-customGreen text-white py-[10px] px-[30px] rounded-xl">
-          Learn More <FaArrowRightLong />
+          Schedule A Call Today <FaArrowRightLong />
         </button>
       </div>
     </section>

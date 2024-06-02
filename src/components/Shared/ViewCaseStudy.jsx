@@ -25,6 +25,13 @@ const ViewCaseStudy = ({ caseStudy }) => {
             </div>
           )
         )}
+        <div className="flex items-center justify-center pt-4">
+          <img
+            src={caseStudy?.img}
+            alt=""
+            className="rounded object-cover max-w-60 md:max-w-60 lg:max-w-72 2xl:max-w-80"
+          />
+        </div>
       </div>
     </div>
   );

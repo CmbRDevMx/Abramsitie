@@ -63,10 +63,10 @@ const Testimonial = () => {
         className=" container px-3 lg:px-2 mx-auto  space-y-5 text-center"
         data-aos="fade-up"
       >
-        <h1 className="main_heading ">See what others are saying</h1>
+        <h1 className="main_heading ">What People Are Saying </h1>
         <p className="lg:max-w-[645px] mx-auto">
-           Lorem Ipsum has been the industry's text ever has been the industry's
-          standard dummy text ever since the text ever since the
+          60% of our clients double their revenue in the first 6 months. Here’s
+          what they had to say about CST Social Marketing
         </p>
         <div className="flex justify-center md:justify-center pb-[50px] ">
           <button className="flex items-center btn py-[10px] px-[30px] rounded-md">

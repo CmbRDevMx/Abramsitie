@@ -22,14 +22,20 @@ function Contact() {
         {/* Instagram icon */}
         <BsInstagram className="absolute bg-red-500 text-[38px] rounded-md top-[-3rem] left-[18rem] transform rotate-12 text-white hidden lg:block" />
 
-        <h2 className="main_heading text-white">Does this sound like you?</h2>
+        <h2 className="main_heading text-white">
+          Your product or service is not selling?
+        </h2>
+        <h2 className="main_heading text-white">
+          You’re not sure who is your target audience should be?
+        </h2>
 
         {/* Facebook icon */}
         <FaFacebook className="absolute bg-white text-[38px] rounded-md top-[2rem] right-[7rem] transform rotate-12 text-blue-700 hidden lg:block" />
 
-        <p className="text-xl md:text-2xl font-medium mx-auto lg:max-w-[726px] text-white">
-          Schedule a free call below to find out how we can take your personal
-          brand to 6-figures!
+        <p className="text-xl md:text-2xl font-medium mx-auto lg:max-w-4xl text-white">
+          Contact CST Social marketing today. We want to see you succeed, tell
+          us about your product or services. We will identify your true target
+          audience and get your product in front of them.
         </p>
         <div className="flex justify-center md:justify-center pb-[50px] relative ">
           {/* TikTok icon */}
@@ -37,7 +43,7 @@ function Contact() {
 
           {/* Call button */}
           <button className="flex items-center btn mt-6 md:mt-4 py-[10px] px-[30px] rounded-md">
-            Book a call <FaPhoneAlt />
+            Schedule A Call <FaPhoneAlt />
           </button>
 
           {/* Twitter icon */}

@@ -20,7 +20,7 @@ const SvgLine = ({ path, svgClassName, wrapClassName }) => {
 
         pathRef.current.style.strokeDashoffset = `${-value}`;
         // console.log(value);
-        console.log(calculateVisibilityPercentage(svgRef.current));
+        // console.log(calculateVisibilityPercentage(svgRef.current));
       }
       // setLineY1(newY1);
       // setLineY2(newY2);
@@ -31,9 +31,9 @@ const SvgLine = ({ path, svgClassName, wrapClassName }) => {
   }, []);
   useEffect(() => {
     if (svgRef.current) {
-      console.log(svgRef.current);
+      // console.log(svgRef.current);
       const pathLength = pathRef.current.getTotalLength();
-      console.log(pathLength);
+      // console.log(pathLength);
     }
   }, []);
   return (

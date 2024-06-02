@@ -72,31 +72,40 @@ const CreativeWork = () => {
 
   const imageData = [
     {
-      imageUrl: "/img/poster1.png",
+      imageUrl: "/img/work/1.jpg",
     },
     {
-      imageUrl: "/img/poster2.png",
+      imageUrl: "/img/work/2.jpg",
     },
     {
-      imageUrl: "/img/poster3.png",
+      imageUrl: "/img/work/3.png",
     },
     {
-      imageUrl: "/img/poster4.png",
+      imageUrl: "/img/work/4.png",
     },
     {
-      imageUrl: "/img/poster5.png",
+      imageUrl: "/img/work/5.jpg",
     },
     {
-      imageUrl: "/img/poster6.png",
+      imageUrl: "/img/work/6.jpg",
     },
     {
-      imageUrl: "/img/poster7.png",
+      imageUrl: "/img/work/7.jpg",
     },
     {
-      imageUrl: "/img/poster8.png",
+      imageUrl: "/img/work/8.jpg",
     },
     {
-      imageUrl: "/img/poster9.png",
+      imageUrl: "/img/work/9.jpg",
+    },
+    {
+      imageUrl: "/img/work/10.png",
+    },
+    {
+      imageUrl: "/img/work/11.jpg",
+    },
+    {
+      imageUrl: "/img/work/12.png",
     },
   ];
   return (
@@ -106,10 +115,10 @@ const CreativeWork = () => {
         data-aos="fade-up"
       >
         <h1 className="main_heading">Some of our creative work</h1>
-        <p className="mx-auto lg:max-w-[645px]">
+        {/* <p className="mx-auto lg:max-w-[645px]">
           Lorem Ipsum has been the industry's text ever has been the industry's
           standard dummy text ever since the text ever since the
-        </p>
+        </p> */}
         <div className="flex justify-center md:justify-center pb-[50px]">
           <button className="flex items-center btn py-[10px] px-[30px] rounded-md">
             Book a call <FaPhoneAlt />
@@ -127,7 +136,7 @@ const CreativeWork = () => {
           <div className="overflow-hidden ">
             <img
               alt="gallery"
-              className="h-full w-full object-contain transition-all duration-500 hover:scale-110"
+              className="min-h-full max-h-[405px] 2xl:max-h-[571px] w-full object-cover object-top transition-all duration-500 hover:scale-110"
               src={img.imageUrl}
             />
 

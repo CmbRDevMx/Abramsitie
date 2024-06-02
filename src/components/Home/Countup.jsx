@@ -58,6 +58,7 @@ function Countup() {
 
   const productCaseStudy = {
     title: "Case Study: Wells Fargo Student Credit Card",
+    img: "/img/40.png",
     infos: [
       {
         title: "Objective:",
@@ -97,8 +98,8 @@ function Countup() {
         text: "Based on the qualitative research findings, CST Social Marketing developed a comprehensive marketing strategy to enhance the desirability of the Wells Fargo Student Credit Card among college students.",
       },
       {
-        title: "Pilot Campaign with North Carolina  A&T State University:",
-        text: "To test the effectiveness of the marketing strategy, CST Social Marketing launched a pilot campaign in collaboration with North Carolina State University (North Carolina  A&T State University), a large university with a diverse student population.",
+        title: "Pilot Campaign with Florida University:",
+        text: "To test the effectiveness of the marketing strategy, CST Social Marketing launched a pilot campaign in collaboration with Florida University, a large university with a diverse student population.",
       },
       {
         title: "Activation:",
@@ -143,6 +144,7 @@ function Countup() {
 
   const brandCaseStudy = {
     title: "Case Study: Scent Pillow llc",
+    img: "/img/9.png",
     infos: [
       {
         title: "Campaign Duration:",
@@ -211,6 +213,7 @@ function Countup() {
 
   const reputationCaseStudy = {
     title: "Case Study: City Lobster",
+    img: "/img/60.png",
     infos: [
       {
         title: "Background:",
