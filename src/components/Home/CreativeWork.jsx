@@ -133,20 +133,12 @@ const CreativeWork = () => {
         data-aos-duration="1500"
       >
         {imageData?.map((img) => (
-          <div className="overflow-hidden ">
+          <div className="overflow-hidden row-span-2">
             <img
               alt="gallery"
               className="min-h-full max-h-[405px] 2xl:max-h-[571px] w-full object-cover object-top transition-all duration-500 hover:scale-110"
               src={img.imageUrl}
             />
-
-            {/* <div className="p-5 flex items-center justify-center flex-col text-center text-gray-100 relative z-10 h-full w-full bg-black/80 transition-all duration-500 opacity-0 hover:opacity-100">
-              <h1 className="text-lg font-bold ">{img?.title}</h1>
-              <p className="text-sm pt-2">{img?.description}</p>
-              <button className="bg-customGreen text-white rounded-full px-4 py-1 text-sm md:text-base font-medium mt-2.5">
-                View case study
-              </button>
-            </div> */}
           </div>
         ))}
       </div>

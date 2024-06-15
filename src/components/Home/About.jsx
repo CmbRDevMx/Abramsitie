@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="about py-8 md:pt-[50px] container mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center"
+      className="about pt-8 md:pt-[50px] container mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center"
     >
       {/* <div
         className="mt-8 md:mt-0 md:w-1/2 relative"
@@ -45,7 +45,7 @@ function About() {
             campaigns that deliver tangible results. Our objective ensures your
             brand reaches the right people with the right message, every time
           </p>
-          <div className="flex justify-center lg:pb-[50px]">
+          <div className="flex justify-center">
             <button className="flex items-center btn 2xl:text-xl py-2 md:py-2.5 2xl:py-3 px-7 md:px-[30px] rounded-full">
               Learn More <FaArrowRightLong />
             </button>

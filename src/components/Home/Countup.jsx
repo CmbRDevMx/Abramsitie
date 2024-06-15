@@ -58,7 +58,6 @@ function Countup() {
 
   const productCaseStudy = {
     title: "Case Study: Wells Fargo Student Credit Card",
-    img: "/img/40.png",
     infos: [
       {
         title: "Objective:",
@@ -144,7 +143,6 @@ function Countup() {
 
   const brandCaseStudy = {
     title: "Case Study: Scent Pillow llc",
-    img: "/img/9.png",
     infos: [
       {
         title: "Campaign Duration:",
@@ -213,7 +211,6 @@ function Countup() {
 
   const reputationCaseStudy = {
     title: "Case Study: City Lobster",
-    img: "/img/60.png",
     infos: [
       {
         title: "Background:",
@@ -264,7 +261,7 @@ function Countup() {
 
   return (
     <div className="relative">
-      <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center relative">
+      <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center lg:justify-between relative">
         <div
           className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8"
           data-aos="fade-left"
@@ -297,7 +294,11 @@ function Countup() {
           data-aos="fade-right"
           data-aos-duration="1500"
         >
-          <img src="/img/brand_awareness_c1.png" alt="" className="w-full" />
+          <img
+            src="/img/40.png"
+            alt=""
+            className="h-[75dvh] w-11/12 rounded-3xl ml-auto"
+          />
         </div>
         <SvgLine
           path="M0.500977 0V509.5C0.500977 526.069 13.9324 539.5 30.501 539.5H2458C2474.57 539.5 2488 552.932 2488 569.5V1007"
@@ -312,7 +313,7 @@ function Countup() {
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <img src="/img/brand_awareness_c2.png" alt="" className="w-full" />
+          <img src="/img/9.png" alt="" className="w-full" />
         </div>
         <div
           className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right"
@@ -382,9 +383,9 @@ function Countup() {
           data-aos-duration="1500"
         >
           <img
-            src={burger}
+            src="/img/60.png"
             alt="burger"
-            className="z-10 lg:mb-2 w-full md:max-w-[550px]  mx-auto md:mr-0 shadow"
+            className="z-10 lg:mb-2 w-full md:max-w-[550px] rounded-3xl mx-auto md:mr-0 shadow"
           />
         </div>
         <div className="size-[200px] lg:size-[500px] absolute right-[2.5%] -z-10 blur-[50px] rounded-full bg-[#2337C6]/[0.4]"></div>

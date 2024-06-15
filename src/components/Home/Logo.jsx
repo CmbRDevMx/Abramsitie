@@ -65,8 +65,8 @@ function Logos() {
         />
       </section> */}
 
-      <section className="px-10 py-6 md:p-14 2xl:p-20 relative">
-        <h1 className="blog_heading2 font-semibold 2xl:text-5xl py-4 lg:py-8 2xl:py-12 text-black max-w-4xl text-center mx-auto">
+      <section className="px-10 py-6 md:p-14 lg:px-16 lg:pt-20 lg:pb-36 2xl:px-20 2xl:pt-24 2xl:pb-40 relative">
+        <h1 className="blog_heading2 font-semibold 2xl:text-5xl py-4 lg:py-20 2xl:py-28 text-black max-w-4xl text-center mx-auto">
           We are the trusted growth partner for many startups and scaleups
           companies
         </h1>

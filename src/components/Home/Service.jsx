@@ -10,6 +10,7 @@ import brand from "../assets/brand.png";
 import marketing from "../assets/marketing.png";
 import phone from "../assets/phone.png";
 import consulting from "../assets/consulting.png";
+
 function Service() {
   useEffect(() => {
     Aos.init();
@@ -23,7 +24,7 @@ function Service() {
       img: note,
     },
     {
-      title: "Amend to read  Pay – Per-Click advertising ",
+      title: "Pay–Per–Click",
       description:
         "Maximize your impact on social media with CST's paid advertisement service. Harness the power of platforms like Facebook, Instagram, TiK Tok, and X to reach your target audience with precision. Our team crafts visually stunning ads that drive engagement, conversions, and results, all while optimizing your advertising budget for maximum ROI.",
       img: phone,
@@ -74,7 +75,7 @@ function Service() {
       />
       <div
         id="service"
-        className="container hid lg:max-w-[1236px] px-3 lg:px-2 mx-auto py-[50px]"
+        className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto py-[50px]"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
@@ -99,7 +100,7 @@ function Service() {
                 </div> */}
                 <div className="overflow-hidden rounded">
                   <img
-                    className="w-full  max-h-[350px] object-cover rounded hover:scale-105 transition-all scale-100 duration-500"
+                    className="w-full  max-h-[350px] object-contain rounded hover:scale-105 transition-all scale-100 duration-500"
                     src={service.img}
                     alt=""
                   />

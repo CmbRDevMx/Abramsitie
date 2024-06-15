@@ -43,7 +43,7 @@ function Home() {
       <About />
 
       <div
-        className="pb-16 mt-16 md:pb-24 md:mt-24 hid  2xl:mt-32 2xl:pb-32 overflow-hidden  "
+        className="mt-4 md:mt-8  overflow-hidden  "
         data-aos="fade-up"
         data-aos-duration="1500"
       >
@@ -65,7 +65,7 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
+        <div className="max-h-screen h-[400px] md:h-screen overflow-hidden">
           <img
             src="/img/banner2.png"
             alt=""
