@@ -28,16 +28,19 @@ function Footer() {
   return (
     <header className="bg-white border border-t 2xl:border-t-2">
       <div className="lg:px-12 2xl:px-16 px-4 py-3 flex flex-col md:flex-row justify-between gap-4 items-center">
-        <Link
-          to={"home"}
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          className="w-16 2xl:w-20 h-10 2xl:h-14 flex justify-center md:justify-start"
-        >
-          <img src="img/logo.png" alt="Logo" className="cursor-pointer" />
-        </Link>
+      <Link
+        to={"home"}
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="w-22 md:w-24 2xl:w-28 h-20 md:h-14 2xl:h-28 flex justify-center md:justify-start"
+      >
+        <div className="w-full h-full">
+          <img src="img/cst-logo.png" alt="Logo" className="w-full h-full object-contain cursor-pointer" />
+        </div>
+      </Link>
+
         <div className=" text-gray-700 flex justify-center md:justify-start">
           <p className="border-l-[3px] pl-[20px]">All Copyright Reserved.</p>
         </div>

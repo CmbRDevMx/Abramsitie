@@ -36,9 +36,9 @@ function Navbar() {
     <header className="bg-white">
       <div className="container mx-auto px-4 py-3 flex justify-between gap-4 items-center">
         <div className="w-full md:w-fit flex items-center justify-between md:justify-normal gap-16 2xl:gap-20">
-          <div className="w-12 md:w-16 2xl:w-20 h-7 md:h-10 2xl:h-14">
-            <img src="img/logo.png" alt="Logo" className="" />
-          </div>
+        <div className="w-22 md:w-24 2xl:w-28 h-20 md:h-14 2xl:h-28">
+          <img src="img/cst-logo.png" alt="Logo" className="w-full h-full object-contain" />
+        </div>
 
           <div className="md:flex items-center text-gray-700 text-xl 2xl:text-2xl justify-start space-x-4">
             <ul className="md:flex hidden md:items-center space-x-4 col-span-6">
