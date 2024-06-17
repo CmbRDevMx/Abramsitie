@@ -290,14 +290,14 @@ function Countup() {
           </div>
         </div>
         <div
-          className="mt-8 md:mt-0 md:w-1/2  "
+          className="mt-8 md:mt-0 md:w-1/2"
           data-aos="fade-right"
           data-aos-duration="1500"
         >
           <img
             src="/img/40.png"
             alt=""
-            className="h-[75dvh] w-11/12 rounded-3xl ml-auto"
+            className="w-full h-auto max-h-[50vh] md:max-h-[75vh] object-cover rounded-3xl ml-auto"
           />
         </div>
         <SvgLine
@@ -306,6 +306,7 @@ function Countup() {
           wrapClassName={"  lg:bottom-[-200px] "}
         ></SvgLine>
       </section>
+
 
       <section className="banner container text-center px-3 pt-[50px] md:pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative ">
         <div
