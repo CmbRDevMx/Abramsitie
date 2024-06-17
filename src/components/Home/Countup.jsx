@@ -313,7 +313,7 @@ function Countup() {
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <img src="/img/9.png" alt="" className="w-full" />
+          <img src="/img/9_1.png" alt="" className="w-full" />
         </div>
         <div
           className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right"

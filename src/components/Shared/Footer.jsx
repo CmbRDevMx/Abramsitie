@@ -61,7 +61,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center gap-4 lg:gap-6 2xl:gap-8">
           <p className="flex items-center text-gray-600 gap-1">
             <IoLocationOutline />
-            123 Street Nigeria ,Nigeria
+            Dallas, Texas
           </p>
           <p className="flex items-center text-gray-600 gap-1">
             <MdAlternateEmail />
