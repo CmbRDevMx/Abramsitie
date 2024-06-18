@@ -73,39 +73,54 @@ const CreativeWork = () => {
   const imageData = [
     {
       imageUrl: "/img/work/1.jpg",
+      // className: "row-span-2",
     },
     {
       imageUrl: "/img/work/2.jpg",
+      // className: "row-span-2",
     },
     {
       imageUrl: "/img/work/3.png",
+      className: "row-span-2",
+      imgClass: "object-fill",
     },
     {
       imageUrl: "/img/work/4.png",
+      // className: "row-span-2",
     },
     {
       imageUrl: "/img/work/5.jpg",
+      // className: "row-span-2",
     },
     {
       imageUrl: "/img/work/6.jpg",
+      className: "row-span-2",
+      imgClass: "object-fill",
     },
-    {
-      imageUrl: "/img/work/7.jpg",
-    },
+
     {
       imageUrl: "/img/work/8.jpg",
+      // className: "row-span-2",
     },
     {
       imageUrl: "/img/work/9.jpg",
+      // className: "row-span-2",
     },
-    {
-      imageUrl: "/img/work/10.png",
-    },
+    // {
+    //   imageUrl: "/img/work/10.png",
+    //   // className: "row-span-2",
+    // },
     {
       imageUrl: "/img/work/11.jpg",
+      // className: "row-span-2",
     },
+    // {
+    //   imageUrl: "/img/work/12.png",
+    //   // className: "row-span-2",
+    // },
     {
-      imageUrl: "/img/work/12.png",
+      imageUrl: "/img/work/7.jpg",
+      // className: "row-span-2",
     },
   ];
   return (
@@ -125,7 +140,6 @@ const CreativeWork = () => {
           </button>
         </div>
       </section>
-
       <div
         className="mx-4 md:mx-14 2xl:mx-20 grid grid-cols-1 md:grid-cols-3 gap-5"
         data-aos="fade-down"
@@ -133,16 +147,16 @@ const CreativeWork = () => {
         data-aos-duration="1500"
       >
         {imageData?.map((img) => (
-          <div className="overflow-hidden row-span-2">
+          <div className={`overflow-hidden ${img.className}`}>
             <img
               alt="gallery"
-              className="min-h-full max-h-[405px] 2xl:max-h-[571px] w-full object-cover object-top transition-all duration-500 hover:scale-110"
+              className={`min-h-full w-full md:max-h-[400px] 2xl:max-h-[550px] object-top transition-all duration-500 hover:scale-110 ${img?.imgClass}`}
               src={img.imageUrl}
             />
           </div>
         ))}
       </div>
-
+      {/* max-h-[405px] 2xl:max-h-[571px] */}
       <img
         src="/img/shadow.png"
         className="hidden md:block absolute left-0 -bottom-1/4 -z-10 opacity-85"

@@ -291,7 +291,7 @@ function Countup() {
         </div>
 
         <div
-          className="mt-8 md:mt-0 md:w-1/2 h-[700px]"
+          className="mt-8 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px]"
           data-aos="fade-right"
           data-aos-duration="1500"
         >
@@ -314,7 +314,7 @@ function Countup() {
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <img src="/img/9_1.png" alt="" className="w-full mt-8" />
+          <img src="/img/9_1.png" alt="" className="w-full 2xl:mt-8" />
         </div>
         <div
           className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right"
