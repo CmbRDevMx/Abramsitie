@@ -289,15 +289,16 @@ function Countup() {
             </AppModal>
           </div>
         </div>
+
         <div
-          className="mt-8 md:mt-0 md:w-1/2"
+          className="mt-8 md:mt-0 md:w-1/2 h-[700px]"
           data-aos="fade-right"
           data-aos-duration="1500"
         >
           <img
             src="/img/40.png"
             alt=""
-            className="w-full h-auto max-h-[50vh] md:max-h-[75vh] object-cover rounded-3xl ml-auto"
+            className="w-full object-cover rounded-3xl ml-auto"
           />
         </div>
         <SvgLine
@@ -307,14 +308,13 @@ function Countup() {
         ></SvgLine>
       </section>
 
-
       <section className="banner container text-center px-3 pt-[50px] md:pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative ">
         <div
           className="mt-8 md:mt-0 md:w-1/2"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <img src="/img/9_1.png" alt="" className="w-full" />
+          <img src="/img/9_1.png" alt="" className="w-full mt-8" />
         </div>
         <div
           className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right"
