@@ -25,7 +25,7 @@ function Contact() {
 
         <h2 className="main_heading text-black relative inline-block ">
           Product & Service Desirability
-          <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-12 h-1 bg-yellow-500"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-12 h-1 line"></div>
         </h2>
         {/* <h2 className="main_heading text-white">
           You’re not sure who is your target audience should be?

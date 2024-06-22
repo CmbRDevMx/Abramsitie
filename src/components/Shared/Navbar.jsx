@@ -69,7 +69,7 @@ function Navbar() {
             className="btn py-1.5 md:py-[10px] px-2 md:px-[30px] rounded-md col-span-2"
             onClick={handleToggle}
           >
-            Let’s Talk
+            BOOK A CALL 
           </button>
         </div>
       </div>

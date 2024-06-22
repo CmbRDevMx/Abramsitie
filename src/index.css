@@ -57,6 +57,10 @@ html {
   padding-right: 40px;
 }
 
+.line{
+  background-color: #4169e1;
+}
+
 @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .swiper-slide-active {
     justify-content: center !important;
