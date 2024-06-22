@@ -1,4 +1,5 @@
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const CreativeWork = () => {
   const imageDataOld = [
@@ -72,54 +73,66 @@ const CreativeWork = () => {
 
   const imageData = [
     {
-      imageUrl: "/img/work/1.jpg",
-      // className: "row-span-2",
-    },
-    {
-      imageUrl: "/img/work/2.jpg",
-      // className: "row-span-2",
-    },
-    {
-      imageUrl: "/img/work/3.png",
-      className: "row-span-2",
-      imgClass: "object-fill",
-    },
-    {
-      imageUrl: "/img/work/4.png",
-      // className: "row-span-2",
-    },
-    {
-      imageUrl: "/img/work/5.jpg",
+      imageUrl: "/img/work/work/i-said-it.png",
+      title: "Social Media PPC Advertisement",
+      des: "Brand Awareness Campaign",
       // className: "row-span-2",
     },
     {
       imageUrl: "/img/work/6.jpg",
+      title: "Social Media PPC Advertisement",
+      des: "Increase online sales traffic",
       className: "row-span-2",
       imgClass: "object-fill",
     },
-
     {
-      imageUrl: "/img/work/8.jpg",
+      imageUrl: "/img/work/work/Post 5.png",
+      title: "Social Media PPC Advertisement",
+      des: "Print & PPC Advertisement Brand Awareness",
+      // className: "row-span-2",
+      // imgClass: "object-fill",
+    },
+    {
+      imageUrl: "/img/work/work/lnh.jpg",
+      title: "Creative Marketing",
+      des: "Print & PPC Advertisement Brand Awareness"
       // className: "row-span-2",
     },
     {
-      imageUrl: "/img/work/9.jpg",
+      imageUrl: "/img/work/work/4.png",
+      title: "Social Media Paid Advertisement",
+      des: "Increase online sales traffic"
       // className: "row-span-2",
     },
-    // {
-    //   imageUrl: "/img/work/10.png",
-    //   // className: "row-span-2",
-    // },
     {
-      imageUrl: "/img/work/11.jpg",
+      imageUrl: "/img/work/work/doordash.png",
+      title: "",
+      des: "",
       // className: "row-span-2",
     },
-    // {
-    //   imageUrl: "/img/work/12.png",
-    //   // className: "row-span-2",
-    // },
     {
-      imageUrl: "/img/work/7.jpg",
+      imageUrl: "/img/work/work/7.jpg",
+      title: "Social Media Paid Advertisement",
+      des: "Increase online sales traffic",
+      // className: "row-span-2",
+    },
+    {
+      imageUrl: "/img/work/work/Story 1.png",
+      title: "",
+      des: "",
+      className: "row-span-2",
+      imgClass: "object-fill",
+    },
+    {
+      imageUrl: "/img/work/work/8.jpg",
+      title: "",
+      des: "",
+      // className: "row-span-2",
+    },
+    {
+      imageUrl: "/img/work/work/9.jpg",
+      title: "Social Media PPC Advertisement",
+      des: "Brand Awareness Campaign",
       // className: "row-span-2",
     },
   ];
@@ -135,27 +148,38 @@ const CreativeWork = () => {
           standard dummy text ever since the text ever since the
         </p> */}
         <div className="flex justify-center md:justify-center pb-[50px]">
-          <button className="flex items-center btn py-[10px] px-[30px] rounded-md">
-            Book a call <FaPhoneAlt />
+        <button className="flex items-center text-xl gap-2">
+            <span className="font-bold underline underline-offset-2">
+            Let’s talk 
+            </span>{" "}
+            <FaArrowRightLong />
           </button>
         </div>
       </section>
       <div
-        className="mx-4 md:mx-14 2xl:mx-20 grid grid-cols-1 md:grid-cols-3 gap-5"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
-        {imageData?.map((img) => (
-          <div className={`overflow-hidden ${img.className}`}>
-            <img
-              alt="gallery"
-              className={`min-h-full w-full md:max-h-[400px] 2xl:max-h-[550px] object-top transition-all duration-500 hover:scale-110 ${img?.imgClass}`}
-              src={img.imageUrl}
-            />
-          </div>
-        ))}
-      </div>
+          className="mx-4 md:mx-14 2xl:mx-20 grid grid-cols-1 md:grid-cols-3 gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          {imageData?.map((img) => (
+            <div className={`relative overflow-hidden ${img.className} group`} key={img.imageUrl}>
+              <img
+                alt="gallery"
+                className={`min-h-full w-full md:max-h-[400px] 2xl:max-h-[550px] object-top transition-all duration-500 hover:scale-110 ${img?.imgClass}`}
+                src={img.imageUrl}
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-500 flex items-start justify-start p-4">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 bg-black bg-opacity-75 rounded">
+                  <h2 className="text-lg font-bold">{img.title}</h2>
+                  <h2 className="text-2xl">{img.des}</h2>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
       {/* max-h-[405px] 2xl:max-h-[571px] */}
       <img
         src="/img/shadow.png"

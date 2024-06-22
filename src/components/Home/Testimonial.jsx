@@ -69,8 +69,11 @@ const Testimonial = () => {
           what they had to say about CST Social Marketing
         </p>
         <div className="flex justify-center md:justify-center pb-[50px] ">
-          <button className="flex items-center btn py-[10px] px-[30px] rounded-md">
-            Learn More <FaArrowRightLong />
+          <button className="flex items-center text-xl gap-2">
+            <span className="font-bold underline underline-offset-2">
+              Learn More
+            </span>{" "}
+            <FaArrowRightLong />
           </button>
         </div>
       </section>

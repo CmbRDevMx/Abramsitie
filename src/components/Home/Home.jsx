@@ -75,7 +75,7 @@ function Home() {
       </div>
 
       {/* testimonial section here  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
       {/* creative work */}
       <CreativeWork />

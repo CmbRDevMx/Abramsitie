@@ -46,8 +46,11 @@ function About() {
             brand reaches the right people with the right message, every time
           </p>
           <div className="flex justify-center">
-            <button className="flex items-center btn 2xl:text-xl py-2 md:py-2.5 2xl:py-3 px-7 md:px-[30px] rounded-full">
-              Learn More <FaArrowRightLong />
+            <button className="flex items-center text-xl gap-2">
+              <span className="font-bold underline underline-offset-2">
+               WORK WITH US
+              </span>{" "}
+              <FaArrowRightLong />
             </button>
           </div>
         </div>

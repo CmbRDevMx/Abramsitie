@@ -37,7 +37,7 @@ function Footer() {
         className="w-22 md:w-24 2xl:w-28 h-20 md:h-14 2xl:h-28 flex justify-center md:justify-start"
       >
         <div className="w-full h-full">
-          <img src="img/cst-logo.png" alt="Logo" className="w-full h-full object-contain cursor-pointer" />
+          <img src="img/l-smma.png" alt="Logo" className="w-full h-full object-contain cursor-pointer" />
         </div>
       </Link>
 

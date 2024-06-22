@@ -120,9 +120,16 @@ function Service() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <button className="btn flex items-center bg-customGreen text-white py-[10px] px-[30px] rounded-xl">
+        {/* <button className="btn flex items-center bg-customGreen text-white py-[10px] px-[30px] rounded-xl">
           Schedule A Call Today <FaArrowRightLong />
-        </button>
+        </button> */}
+
+          <button className="flex items-center text-xl gap-2">
+            <span className="font-bold underline underline-offset-2">
+              Schedule A Call Today
+            </span>{" "}
+            <FaArrowRightLong />
+          </button>
       </div>
     </section>
   );
