@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 function About() {
   return (
@@ -46,12 +47,20 @@ function About() {
             brand reaches the right people with the right message, every time
           </p>
           <div className="flex justify-center">
-            <button className="flex items-center text-xl gap-2">
-              <span className="font-bold underline underline-offset-2">
-               WORK WITH US
-              </span>{" "}
-              <FaArrowRightLong />
-            </button>
+          <Link
+              to="service"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <button className="flex items-center text-xl gap-2">
+                <span className="font-bold underline underline-offset-2">
+                  WORK WITH US
+                </span>{" "}
+                <FaArrowRightLong />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
