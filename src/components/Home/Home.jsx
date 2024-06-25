@@ -43,11 +43,11 @@ function Home() {
       <About />
 
       <div
-        className="mt-4 md:mt-8  overflow-hidden  "
+        className="mt-4 md:mt-8 overflow-hidden"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="max-h-screen  h-[400px] md:h-auto overflow-hidden">
+        <div className="h-[600px] md:h-[400px] max-h-screen overflow-hidden"> {/* Adjusted height */}
           <img
             src="/img/banner1.png"
             alt=""
@@ -65,7 +65,7 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="max-h-screen h-[400px] md:h-screen overflow-hidden">
+        <div className="h-[600px] md:h-screen max-h-screen overflow-hidden"> {/* Adjusted height */}
           <img
             src="/img/banner2.png"
             alt=""
@@ -73,6 +73,7 @@ function Home() {
           />
         </div>
       </div>
+
 
       {/* testimonial section here  */}
       {/* <Testimonial /> */}
@@ -85,7 +86,7 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="max-h-screen h-[400px] md:h-auto overflow-hidden">
+        <div className="h-[600px] md:h-auto max-h-screen overflow-hidden"> {/* Adjusted height */}
           <img
             src="/img/banner3.png"
             alt=""
@@ -93,6 +94,7 @@ function Home() {
           />
         </div>
       </div>
+
 
       <Contact />
 

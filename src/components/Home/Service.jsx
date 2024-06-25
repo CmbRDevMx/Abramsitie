@@ -75,7 +75,7 @@ function Service() {
       />
       <div id="service" className="container lg:max-w-[1236px] px-3 lg:px-2 mx-auto py-[50px]" data-aos="fade-up" data-aos-duration="1500">
         <div className="flex items-center justify-between">
-          <h1 className="main_heading text-2xl lg:text-4xl">A wide range of services</h1>
+          <h1 className="main_heading text-2xl lg:text-4xl mr-4 sm:mr-8">A wide range of services</h1>
           <img src="img/l-smma-3.png" alt="Sample" className="w-20 h-20 sm:w-32 sm:h-32 lg:w-64 lg:h-64" />
         </div>
       </div>
