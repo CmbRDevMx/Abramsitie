@@ -130,8 +130,8 @@ const CreativeWork = () => {
     },
     {
       imageUrl: "/img/work/3.png",
-      title: "Social Media PPC Advertisement",
-      des: "Brand Awareness Campaign",
+      title: "Brand Awareness Campaign",
+      des: "Drive online sign up",
       // className: "row-span-2",
     },
   ];
