@@ -285,7 +285,7 @@ function Countup() {
           </div>
         </div>
 
-        <div className="mt-4 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px] -mt-8 md:mt-0" data-aos="fade-right" data-aos-duration="1500">
+        <div className="mt-4 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px] -mt-10 md:mt-0" data-aos="fade-right" data-aos-duration="1500">
           <img src="/img/40.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
         </div>
         <SvgLine
