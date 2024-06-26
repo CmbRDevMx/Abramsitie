@@ -47,7 +47,7 @@ function Home() {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="h-[600px] md:h-[400px] max-h-screen overflow-hidden"> {/* Adjusted height */}
+        <div className="h-[600px] md:h-[400px] lg:h-[700px] xl:h-[800px] max-h-screen overflow-hidden"> {/* Adjusted height */}
           <img
             src="/img/banner1.png"
             alt=""
