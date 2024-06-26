@@ -98,7 +98,7 @@ function Navbar() {
               </Link>
             ))}
             <button className="btn py-1 px-2 rounded-md text-sm">
-              <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">Book a Call</a>
+              <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">Schedule a Call</a>
             </button>
           </div>
         </Drawer>
