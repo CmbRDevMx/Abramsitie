@@ -297,7 +297,7 @@ function Countup() {
 
       <section className="banner container text-center px-3 pt-[50px] md:pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative">
         <div className="mt-8 md:mt-0 md:w-1/2 -mt-10 md:mt-0" data-aos="fade-left" data-aos-duration="1500">
-          <img src="/img/9_1.png" alt="" className="w-full 2xl:mt-8" />
+          <img src="/img/9_1-2.png" alt="" className="w-full 2xl:mt-8" />
         </div>
         <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right" data-aos-duration="1500">
           <h2 ref={h2Ref2} className="blog_heading py-5">
