@@ -166,18 +166,18 @@ const CreativeWork = () => {
       >
         {imageData?.map((img) => (
           <div className={`relative overflow-hidden ${img.className} group`} key={img.imageUrl}>
-            <img
-              alt="gallery"
-              className={`min-h-full w-full md:max-h-[400px] 2xl:max-h-[550px] object-top transition-all duration-500 hover:scale-110 ${img?.imgClass}`}
-              src={img.imageUrl}
-            />
-            <div className="absolute top-0 left-0 w-full h-full  transition-opacity duration-500 flex items-start justify-start p-4">
-              <div className="text-white opacity-100 p-4 bg-black bg-opacity-75 rounded">
-                <h2 className="text-lg font-bold">{img.title}</h2>
-                <h2 className="text-2xl">{img.des}</h2>
-              </div>
+          <img
+            alt="gallery"
+            className={`min-h-full w-full md:max-h-[400px] 2xl:max-h-[550px] object-top transition-all duration-500 hover:scale-110 ${img?.imgClass}`}
+            src={img.imageUrl}
+          />
+          <div className="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100 flex items-start justify-start p-4">
+            <div className="text-white p-4 bg-black bg-opacity-75 rounded">
+              <h2 className="text-lg font-bold">{img.title}</h2>
+              <h2 className="text-2xl">{img.des}</h2>
             </div>
           </div>
+        </div>
         ))}
       </div>
       <img
