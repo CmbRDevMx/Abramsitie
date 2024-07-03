@@ -138,7 +138,7 @@ const CreativeWork = () => {
   return (
     <div className="relative pt-16 md:pt-24 2xl:pt-32">
       <section
-        className="relative select-none container lg:max-w-[1236px] px-3 lg:px-2 mx-auto space-y-5 text-center -mt-12"
+        className="relative select-none container lg:max-w-[1236px] px-3 lg:px-2 mx-auto space-y-5 text-center -mt-20 md:-mt-24 lg:-mt-28 xl:-mt-32 2xl:-mt-40"
         data-aos="fade-up"
       >
         <div className="flex justify-center">

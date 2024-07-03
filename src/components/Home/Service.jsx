@@ -18,16 +18,16 @@ function Service() {
 
   const serviceData = [
     {
+      title: "Social Media Marketing PPC",
+      description:
+        "Maximize your impact on social media with CST's paid advertisement service. Harness the power of platforms like Facebook, Instagram, TiK Tok, and X to reach your target audience with precision. Our team crafts visually stunning ads that drive engagement, conversions, and results, all while optimizing your advertising budget for maximum ROI.",
+      img: phone,
+    },
+    {
       title: "Target Audience Research",
       description:
         "At CST Social Marketing, we utilize qualitative research to unlock valuable insights into your target audience's preferences. By conducting interviews, focus groups, and observational studies, we gain a deep understanding of what motivates your audience. This allows us to tailor your marketing strategy and campaigns with creative designs & messaging with precision.",
       img: note,
-    },
-    {
-      title: "Pay–Per–Click",
-      description:
-        "Maximize your impact on social media with CST's paid advertisement service. Harness the power of platforms like Facebook, Instagram, TiK Tok, and X to reach your target audience with precision. Our team crafts visually stunning ads that drive engagement, conversions, and results, all while optimizing your advertising budget for maximum ROI.",
-      img: phone,
     },
     {
       title: "Google Paid Ads",

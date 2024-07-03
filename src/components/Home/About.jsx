@@ -56,7 +56,9 @@ function About() {
             >
               <button className="flex items-center text-xl gap-2">
                 <span className="font-bold underline underline-offset-2">
-                  WORK WITH US
+                  <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">
+                    WORK WITH US
+                  </a>
                 </span>{" "}
                 <FaArrowRightLong />
               </button>

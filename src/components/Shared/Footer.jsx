@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import { BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import { IoLocationOutline } from "react-icons/io5";
-import { MdAlternateEmail } from "react-icons/md";
+import { IoMailOutline } from "react-icons/io5";
 
 function Footer() {
   const navLinks = [
@@ -34,7 +34,7 @@ function Footer() {
         smooth={true}
         offset={50}
         duration={500}
-        className="w-22 md:w-24 2xl:w-28 h-20 md:h-14 2xl:h-28 flex justify-center md:justify-start"
+        className="w-28 md:w-32 lg:w-34 2xl:w-40 h-24 md:h-28 lg:h-30 2xl:h-36 flex justify-center md:justify-start"
       >
         <div className="w-full h-full">
           <img src="img/l-smma.png" alt="Logo" className="w-full h-full object-contain cursor-pointer" />
@@ -67,8 +67,8 @@ function Footer() {
             Dallas, Texas
           </p>
           <p className="flex items-center text-gray-600 gap-1">
-            <MdAlternateEmail />
-            www.cstsocial marketing.com
+            <IoMailOutline />
+            info@cstsocialmarketing.com
           </p>
           <p className="flex items-center text-gray-600 gap-1">
             <BsTelephoneFill />
