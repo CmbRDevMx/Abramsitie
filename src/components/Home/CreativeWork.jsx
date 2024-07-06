@@ -105,8 +105,8 @@ const CreativeWork = () => {
     },
     {
       imageUrl: "/img/work/work/doordash.png",
-      title: "",
-      des: "",
+      title: "Social Media Paid Advertisement",
+      des: "Increase online sales traffic"
       // className: "row-span-2",
     },
     {
