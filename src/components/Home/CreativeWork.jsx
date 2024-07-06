@@ -171,10 +171,10 @@ const CreativeWork = () => {
               className={`min-h-full w-full md:max-h-[400px] 2xl:max-h-[550px] object-top transition-all duration-500 hover:scale-110 ${img?.imgClass}`}
               src={img.imageUrl}
             />
-            <div className="absolute top-0 left-0 w-full h-full  transition-opacity duration-500 flex items-start justify-start p-4">
-              <div className="text-white opacity-100 p-4 bg-black bg-opacity-75 rounded">
-                <h2 className="text-lg font-bold">{img.title}</h2>
-                <h2 className="text-2xl">{img.des}</h2>
+            <div className="absolute top-0 left-0 w-full h-full transition-opacity duration-500 flex items-start justify-start p-4 group-hover:opacity-100 opacity-0">
+              <div className="text-white p-4 bg-black bg-opacity-75 rounded">
+                <h2 className="text-base font-bold">{img.title}</h2> {/* reduced from text-lg to text-base */}
+                <h2 className="text-xl">{img.des}</h2> {/* reduced from text-2xl to text-xl */}
               </div>
             </div>
           </div>

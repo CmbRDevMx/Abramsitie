@@ -155,10 +155,6 @@ function Countup() {
           },
         ],
       },
-      {
-        title: "Conclusion:",
-        text: "The qualitative research conducted by CST Social Marketing provided valuable insights into the desirability and preferences of college students regarding a student credit card. By leveraging these insights to develop a targeted marketing strategy and partnering with North Carolina State University for a pilot campaign, CST Social Marketing effectively enhanced the desirability of the Wells Fargo Student Credit Card among the target demographic. The pilot campaign's success underscores the importance of understanding product/service desirability through qualitative research and implementing targeted marketing initiatives to resonate with the intended audience effectively.",
-      },
     ],
   };
 
