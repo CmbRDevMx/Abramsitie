@@ -57,19 +57,25 @@ function Countup() {
   }, []);
 
   const productCaseStudy = {
-    title: "Case Study: Wells Fargo Student Credit Card",
+    title: "Case Study: Wild Ital",
     infos: [
       {
-        title: "Objective:",
-        text: "Determine true desirability of a student credit card among college students and develop an effective marketing strategy to target this demographic.",
-      },
-      {
         title: "Background:",
-        text: "Wells Fargo Bank sought to introduce a student credit card tailored to the needs and preferences of college students. To ensure the success of this new product offering, they engaged CST Social Marketing to conduct qualitative research and devise a targeted marketing strategy that met their KPI’s.",
+        text: "Wild Ital is a brand specializing in natural, wellness-oriented products. With the growing trend of CBD products and the increasing consumer interest in health and wellness, Wild Ital developed a line of CBD-infused drinks designed to provide relaxation and health benefits. However, the market for CBD products is still emerging, and consumer awareness and acceptance can vary widely. CST Social Marketing was tasked with assessing the market potential and devising a strategy to position Wild Ital's CBD-infused drinks successfully.",
       },
       {
         title: "Qualitative Research:",
-        text: "CST Social Marketing conducted extensive qualitative research involving over 3000 college students from diverse backgrounds and institutions to gauge the desirability and preferences for a student credit card.",
+        text: "To understand customer desirability, CST Social Marketing conducted comprehensive qualitative research, including:",
+        lists: [
+          {
+            title: "Focus Groups:",
+            text: "Engaging with diverse consumer groups to discuss their attitudes towards CBD products and their potential interest in CBD-infused drinks.",
+          },
+          {
+            title: "Online Surveys:",
+            text: "Distributed surveys to a broader audience to gather quantitative data on consumer awareness, preferences, and purchase intentions.",
+          },
+        ]
       },
       {
         title: "Key Findings:",
@@ -286,7 +292,7 @@ function Countup() {
         </div>
 
         <div className="mt-4 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px] -mt-10 md:mt-0" data-aos="fade-right" data-aos-duration="1500">
-          <img src="/img/card.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
+          <img src="/img/drink.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
         </div>
         <SvgLine
           path="M0.500977 0V509.5C0.500977 526.069 13.9324 539.5 30.501 539.5H2458C2474.57 539.5 2488 552.932 2488 569.5V1007"
