@@ -78,23 +78,15 @@ function Countup() {
         ]
       },
       {
-        title: "Key Findings:",
+        title: "Findings:",
         lists: [
           {
-            title: "Financial Literacy:",
-            text: "Many college students expressed a lack of financial literacy and understanding of credit cards, highlighting the need for clear and educational messaging.",
+            title: "High Interest in Wellness:",
+            text: "A significant portion of the target audience is highly interested in wellness products. Many participants expressed curiosity and willingness to try CBD-infused drinks due to perceived health benefits.",
           },
           {
-            title: "Desirability:",
-            text: "Despite concerns about debt and financial responsibility, a significant portion of respondents expressed interest in having a student credit card for building credit, making purchases, and managing expenses.",
-          },
-          {
-            title: "Preferences:",
-            text: "Students emphasized the importance of no annual fees, rewards and benefits tailored to student needs (such as cashback on dining and transportation), and digital banking features for convenience.",
-          },
-          {
-            title: "Concerns:",
-            text: " Common concerns included high interest rates, hidden fees, and the potential for overspending leading to debt accumulation.",
+            title: "Need for Education:",
+            text: "There is a considerable knowledge gap about CBD among potential customers. Misconceptions about its effects and legality were common, indicating a need for educational marketing.",
           },
         ],
       },
