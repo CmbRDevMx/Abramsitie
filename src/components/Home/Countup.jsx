@@ -92,43 +92,66 @@ function Countup() {
       },
       {
         title: "CST Marketing Strategy:",
-        text: "Based on the qualitative research findings, CST Social Marketing developed a comprehensive marketing strategy to enhance the desirability of the Wells Fargo Student Credit Card among college students.",
-      },
-      {
-        title: "Pilot Campaign with Florida University:",
-        text: "To test the effectiveness of the marketing strategy, CST Social Marketing launched a pilot campaign in collaboration with Florida University, a large university with a diverse student population.",
-      },
-      {
-        title: "Activation:",
+        text: "Based on the findings, CST Social Marketing developed a multi-faceted strategy:",
         lists: [
           {
-            title: "",
-            text: "Collaborated with North Carolina  A&T State University student organizations and administrative departments to promote the Wells Fargo Student Credit Card to students across campus.",
+            title: "Educational Campaigns",
+            text: "Create informative content to educate consumers about CBD, its benefits, and its legal status. This would include blog posts, infographics, and expert testimonials.",
           },
           {
-            title: "",
-            text: "Hosted informational sessions, pop-up events, and workshops on campus to educate students about credit card basics and the benefits of the Wells Fargo Student Credit Card.",
+            title: "Influencer Partnerships:",
+            text: "Collaborate with wellness influencers and experts to build credibility and trust. Influencers can share their experiences with Wild Ital's CBD-infused drinks and educate their followers.",
           },
           {
-            title: "",
-            text: "Leveraged North Carolina  A&T State University digital communication channels, including social media platforms, email newsletters, and student portals, to disseminate promotional materials and engage with students.",
+            title: "Community Engagement:",
+            text: "Host online and offline events, such as webinars and pop-up tasting events, to engage directly with the target audience and provide first-hand experience with the product.",
+          },
+          {
+            title: "Social Media Marketing",
+            text: "Utilize targeted social media ads to reach health-conscious consumers, focusing on platforms like Instagram and Facebook where wellness communities are active.",
           },
         ],
       },
       {
-        title: "Pilot Results:",
+        title: "Marketing Execution:",
         lists: [
           {
-            title: "Application Rate",
-            text: "The pilot campaign resulted in a 40% increase in credit card applications from North Carolina  A&T State University students compared to the previous semester.",
+            title: "Content Creation",
+            text: "Developed a series of educational blog posts, videos, and infographics explaining the benefits of CBD, how it works, and addressing common misconceptions.",
           },
           {
-            title: "Engagement Metrics:",
-            text: " Saw a significant uptick in engagement metrics, including website visits, social media interactions, event attendance, and email open rates, indicating heightened interest and awareness among the target audience.",
+            title: "Influencer Campaigns:",
+            text: "Partnered with wellness influencers who shared their positive experiences with Wild Ital's drinks through social media posts, stories, and YouTube reviews.",
           },
           {
-            title: "Feedback:",
-            text: "Received positive feedback from students regarding the relevance and usefulness of the educational resources and promotional activities, indicating a favorable perception of the Wells Fargo Student Credit Card offering.",
+            title: "Community Events:",
+            text: "Organized online webinars featuring health experts discussing the benefits of CBD, along with live Q&A sessions. Additionally, hosted pop-up tasting events in key urban locations.",
+          },
+          {
+            title: "Social Media Ads:",
+            text: "Launched targeted ad campaigns on Instagram and Facebook, highlighting the natural ingredients and wellness benefits of Wild Ital's drinks. Ads were tailored to different demographics identified during the research phase.",
+          },
+        ],
+      },
+      {
+        title: "Results:",
+        text: "The strategic marketing efforts led to significant positive outcomes:",
+        lists: [
+          {
+            title: "Sales Growth:",
+            text: "Within six months, Wild Ital saw a 40% increase in sales of their CBD-infused drinks, indicating strong market acceptance and customer desirability.",
+          },
+          {
+            title: "Increased Awareness:",
+            text: "Educational campaigns and influencer partnerships significantly raised awareness about CBD and Wild Ital's products.",
+          },
+          {
+            title: "High Engagement:",
+            text: "Community events and social media activities generated high levels of engagement, with substantial participation in webinars and pop-up events.",
+          },
+          {
+            title: "Positive Feedback:",
+            text: "Customer feedback was overwhelmingly positive, with many praising the taste and perceived health benefits of the drinks. The educational content helped mitigate concerns and build consumer trust.",
           },
         ],
       },
