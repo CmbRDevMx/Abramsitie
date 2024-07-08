@@ -303,7 +303,7 @@ function Countup() {
         </div>
 
         <div className="mt-4 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px] -mt-12 md:mt-0" data-aos="fade-right" data-aos-duration="1500">
-          <img src="/img/drink3.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
+          <img src="/img/drink2.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
         </div>
         <SvgLine
           path="M0.500977 0V509.5C0.500977 526.069 13.9324 539.5 30.501 539.5H2458C2474.57 539.5 2488 552.932 2488 569.5V1007"
