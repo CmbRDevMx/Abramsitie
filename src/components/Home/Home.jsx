@@ -69,7 +69,7 @@ function Home() {
           <img
             src="/img/banner2.png"
             alt=""
-            className="hover:scale-150 transition-all h-full w-full object-cover duration-[2000ms]"
+            className="hover:scale-125 transition-all h-full w-full object-cover duration-[2000ms]"
           />
         </div>
       </div>
