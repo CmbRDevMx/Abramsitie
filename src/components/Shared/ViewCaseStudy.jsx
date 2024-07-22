@@ -1,6 +1,7 @@
+import './viewcasestudy.css'
 const ViewCaseStudy = ({ caseStudy }) => {
   return (
-    <div className="rounded-2xl pt-6 p-5 md:p-6 2xl:p-8 2xl:min-w-[700px] lg:max-w-[1024px] 2xl:max-w-[1200px] max-h-[80dvh] overflow-auto mx-auto">
+    <div className="pt-6 p-5 md:p-6 2xl:p-8 2xl:min-w-[700px] lg:max-w-[1024px] 2xl:max-w-[1200px] max-h-[80dvh] overflow-auto mx-auto view-case">
       <h2 className="text-2xl text-center text-customGreen font-bold">
         {caseStudy?.title}
       </h2>
