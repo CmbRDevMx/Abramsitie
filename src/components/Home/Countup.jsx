@@ -279,7 +279,7 @@ function Countup() {
   return (
     <div className="relative">
       <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center lg:justify-between relative">
-        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8" data-aos="fade-left" data-aos-duration="1500">
+        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8" data-aos="fade-left">
           <h2 ref={h2Ref1} className="blog_heading py-5">
             {isVisible1 ? <CountUp end={40} duration={2} start={0} /> : "40%"}%
           </h2>
@@ -289,7 +289,7 @@ function Countup() {
             desirability and increase customer engagement through targeted
             behavioral analysis.
           </p>
-          <div className="flex justify-center md:justify-start pb-4 md:pb-[50px]"> {/* Adjusted padding */}
+          <div className="flex justify-center md:justify-start pb-4 md:pb-[50px]">
             <AppModal
               button={
                 <button className="flex items-center justify-center md:justify-start text-[18px] font-semibold underline rounded-full">
@@ -302,7 +302,7 @@ function Countup() {
           </div>
         </div>
 
-        <div className="mt-4 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px] -mt-10 md:mt-0" data-aos="fade-right" data-aos-duration="1500">
+        <div className="mt-4 md:mt-0 md:w-1/2 md:h-[520px] 2xl:h-[700px]" data-aos="fade-right">
           <img src="/img/drink2.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
         </div>
         <SvgLine
@@ -313,10 +313,10 @@ function Countup() {
       </section>
 
       <section className="banner container text-center px-3 pt-[50px] md:pt-[180px] lg:pt-[220px] 2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative">
-        <div className="mt-8 md:mt-0 md:w-1/2 -mt-10 md:mt-0" data-aos="fade-left" data-aos-duration="1500">
+        <div className="mt-8 md:mt-0 md:w-1/2" data-aos="fade-left">
           <img src="/img/9_1-2.png" alt="" className="w-full 2xl:mt-8" />
         </div>
-        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right" data-aos-duration="1500">
+        <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right">
           <h2 ref={h2Ref2} className="blog_heading py-5">
             {isVisible2 ? <CountUp end={30} /> : "30%"}%
           </h2>
@@ -325,7 +325,7 @@ function Countup() {
             Elevate your brand’s profile and engagement across diverse channels
             with CST Social Marketing’s integrated multi-channel strategies.
           </p>
-          <div className="pt-2 flex justify-center md:justify-end pb-4 md:pb-[50px]"> {/* Adjusted padding */}
+          <div className="pt-2 flex justify-center md:justify-end pb-4 md:pb-[50px]">
             <AppModal
               button={
                 <button className="flex items-center justify-center md:justify-start text-[18px] font-semibold underline rounded-full">
