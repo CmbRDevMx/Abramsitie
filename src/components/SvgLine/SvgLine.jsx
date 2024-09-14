@@ -43,7 +43,7 @@ const SvgLine = ({ path, svgClassName, wrapClassName }) => {
         wrapClassName
       }
     >
-      <div className="w-[100%] h-[150px] lg:h-[200px] xl:h-[280px]  overflow-y-visible overflow-x-visible">
+      <div className="w-[100%] h-[150px] lg:h-[200px] xl:h-[230px]  overflow-y-visible overflow-x-visible">
         <svg
           ref={svgRef}
           className={`2xl:h-[180%] h-[150%] ml-[60px] w-[80%] 2xl:w-[83%] ${svgClassName}`}
