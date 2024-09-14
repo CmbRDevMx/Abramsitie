@@ -78,7 +78,7 @@ const CreativeWork = () => {
       // className: "row-span-2",
     },
     {
-      imageUrl: "/img/work/6.jpg",
+      imageUrl: "/img/work/work/story-03.jpg",
       title: "Social Media PPC Advertisement",
       des: "Increase online sales traffic",
       className: "row-span-2",
@@ -123,7 +123,7 @@ const CreativeWork = () => {
       imgClass: "object-fill",
     },
     {
-      imageUrl: "/img/work/work/8.jpg",
+      imageUrl: "/img/work/work/seafood.png",
       title: "Social Media PPC Advertisement",
       des: "Brand Awareness Campaign",
       // className: "row-span-2",
@@ -142,7 +142,7 @@ const CreativeWork = () => {
         data-aos="fade-up"
       >
         <div className="flex justify-center">
-          <img src="img/l-smma-2.png" alt="Sample" className="w-40 h-40 lg:w-64 lg:h-64" />
+          <img src="img/l-smma.png" alt="Sample" className="w-40 h-40 lg:w-64 lg:h-64" />
         </div>
         <h1 className="main_heading">Some of our creative work</h1>
         {/* <p className="mx-auto lg:max-w-[645px]">

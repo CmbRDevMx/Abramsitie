@@ -1,5 +1,6 @@
 import React from "react";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 import { BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import { IoLocationOutline } from "react-icons/io5";
@@ -76,8 +77,9 @@ function Footer() {
           </p>
         </div>
 
-        <div className="flex justify-center md:justify-end">
-          <FaTwitter className="text-blue-500 text-2xl 2xl:text-[38px]" />
+        <div className="flex justify-center gap-4 md:justify-end">
+          <FaTiktok className="text-black text-2xl 2xl:text-[38px]" />
+          <FaFacebook className="text-blue-500 text-2xl 2xl:text-[38px]" />
           <BsInstagram className="bg-red-500 text-2xl 2xl:text-[38px] text-white rounded-xl ml-4" />
         </div>
       </div>

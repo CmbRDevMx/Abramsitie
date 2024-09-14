@@ -66,10 +66,10 @@ function Navbar() {
 
         <div className="hidden md:flex col-span-3 md:col-span-2 justify-end">
           <button
-            className="btn py-1.5 md:py-[10px] px-2 md:px-[30px] rounded-md col-span-2"
+            className="btn py-1.5 md:py-[10px] px-2 md:px-[30px] rounded-md col-span-2 bg-red-600"
             onClick={handleToggle}
           >
-            <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">SCHEDULE A CALL </a> 
+            <a href="https://calendly.com/andrew-el6d/30min">SCHEDULE A CALL </a> 
           </button>
         </div>
       </div>
@@ -97,8 +97,8 @@ function Navbar() {
                 <span className={``}>{link.label}</span>
               </Link>
             ))}
-            <button className="btn py-1 px-2 rounded-md text-sm">
-              <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">Schedule a Call</a>
+            <button className="btn py-1 px-2 rounded-md text-sm bg-red-600">
+              <a href="https://calendly.com/andrew-el6d/30min">Schedule a Call</a>
             </button>
           </div>
         </Drawer>
