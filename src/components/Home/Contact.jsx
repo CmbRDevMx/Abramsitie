@@ -46,7 +46,7 @@ function Contact() {
           {/* Call button */}
           <button className="flex items-center text-xl gap-2">
               <span className="font-bold underline underline-offset-2">
-               <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">Book A Discovery Call</a>
+               <a href="https://calendly.com/andrew-el6d/30min">Book A Discovery Call</a>
               </span>{" "}
               <FaArrowRightLong/>
             </button>
