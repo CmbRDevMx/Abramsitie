@@ -11,14 +11,14 @@ function Banner() {
       >
         <div className="mt-8 md:mt-0 space-y-3 md:space-y-5 2xl:space-y-8 md:w-[43%]">
           <h1 className="main_heading ">
-            Everyone is Not Your Audience — Let’s Find Who Is
+            Everyone is Not Your Audience?
+             {/* Let’s Find Who Is */}
           </h1>
           <p className="2xl:text-xl">
             Welcome to CST Social Marketing! We know everyone is not your target audience, 
             and many businesses miss the mark because of this. Our marketing process starts 
-            with a deep target audience research, then crafting a marketing strategy that 
-            connects with your actual customers, and executing campaigns that engage and 
-            convert.
+            with deep target audience research and then crafting a marketing strategy that 
+            connects with your actual customers. 
           </p>
           <div className="flex justify-center md:justify-start pb-6 md:pb-[50px] pt-4 md:pt-0 ">
             <Link
@@ -37,8 +37,12 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 md:w-[55%]">
-          <img src="/img/banner-1.png" alt="" className="w-full" />
+        <div className="mt-8 md:mt-0 md:w-[65%] lg:w-[75%] xl:w-[85%]">
+          <img 
+            src="/img/target-1.png" 
+            alt="" 
+            className="w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] object-cover" 
+          />
         </div>
       </div>
 

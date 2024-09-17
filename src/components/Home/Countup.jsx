@@ -278,23 +278,18 @@ function Countup() {
 
   return (
     <div className="relative">
-      <h1 className="mt-14 font-raleway font-semibold	2xl:text-8xl md:text-7xl text-5xl text-center">
-          Our Marketing Funnel 
-        </h1>
         <section className="banner text-center md:text-left container px-3 pt-[50px] lg:px-8 mx-auto flex flex-col md:flex-row items-center lg:justify-between relative">
   
           <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8" data-aos="fade-left">
             <h2 ref={h2Ref1} className="blog_heading py-5">
               {isVisible1 ? <CountUp end={63} duration={2} start={0} /> : "63%"}%
             </h2>
-            <h2 className="blog_heading2">Know Your Target Audience</h2>
+            <h2 className="blog_heading2 text-3xl sm:text-4xl md:text-4xl">Your Target Audeince</h2>
             <p>
-              Your business growth relies on connecting with the right customers. Did you 
-              know that <b> 63% of consumers prefer to buy from brands that truly understand 
-              their needs?</b> At CST Social Marketing, we help business owners uncover 
-              insights about their target market through qualitative research. By 
-              understanding your audience on a deeper level, we ensure your brand reaches 
-              the right people—those ready to buy—helping you boost growth and maximize your ROI."
+              Your business growth relies on connecting with the right customers. 
+              Did you know that 63% of consumers prefer to buy from brands that truly 
+              understand their needs? At CST Social Marketing, we help business owners 
+              uncover insights about their target market through qualitative research. 
             </p>
             <div className="flex justify-center md:justify-start pb-4 md:pb-[50px]">
               <AppModal
@@ -310,8 +305,13 @@ function Countup() {
           </div>
 
           <div className="mt-4 md:mt-0 lg:mt-14 md:w-1/2 md:h-[520px] 2xl:h-[700px]" data-aos="fade-right">
-            <img src="/img/banner-3.png" alt="" className="w-full object-cover rounded-3xl ml-auto" />
+            <img 
+              src="/img/banner-3.png" 
+              alt="" 
+              className="w-full h-[300px] sm:h-[400px] md:h-full object-cover rounded-3xl ml-auto" 
+            />
           </div>
+
 
           <SvgLine
             path="M0.500977 0V509.5C0.500977 526.069 13.9324 539.5 30.501 539.5H2458C2474.57 539.5 2488 552.932 2488 569.5V1007"
@@ -323,20 +323,22 @@ function Countup() {
 
       <section className="banner container text-center px-3 pt-[50px] md:pt-[180px] lg:pt-[280px]  2xl:pt-[100px] lg:px-8 mx-auto flex flex-col-reverse md:flex-row items-center relative">
       <div className="mt-8 md:mt-0 md:w-2/3 lg:w-3/4 xl:w-full" data-aos="fade-left">
-        <img src="/img/brand-1.png" alt="" className="w-full h-auto 2xl:mt-8" />
+        <img 
+          src="/img/brand-1.png" 
+          alt="" 
+          className="w-full h-[300px] sm:h-[400px] md:h-auto 2xl:mt-8 object-cover" 
+        />
       </div>
+
 
         <div className="md:space-y-5 2xl:space-y-6 md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right">
           <h2 ref={h2Ref2} className="blog_heading py-5">
-            {isVisible2 ? <CountUp end={70} /> : "70%"}%
+            {isVisible2 ? <CountUp end={73} /> : "73%"}%
           </h2>
-          <h2 className="blog_heading2 pb-2">Brand Awareness</h2>
+          <h2 className="blog_heading2 pb-2 text-3xl sm:text-4xl md:text-4xl">Brand Awareness</h2>
           <p>
             We help business owners like you create powerful, recognizable brands that stand out in crowded markets. 
-            Did you know that <b> 70% of consumers are more likely to purchase from a brand they recognize?</b> 
-            By elevating your brand's visibility through targeted marketing strategies, 
-            ensure your products or services are visible to the right audience is 
-            essential to driving traffic and increasing sales.
+            Did you know 70% of consumers are more likely to purchase from a brand they recognize?
           </p>
           <div className="pt-2 flex justify-center md:justify-end pb-4 md:pb-[50px]">
             <AppModal
@@ -364,19 +366,16 @@ function Countup() {
         >
           <div className="md:space-y-5 2xl:space-y-6">
             <h2 ref={h2Ref3} className="blog_heading">
-              {isVisible3 ? <CountUp end={60} /> : "60%"}%
+              {isVisible3 ? <CountUp end={98} /> : "98%"}%
             </h2>
-            <h2 className="blog_heading2 pb-2">
+            <h2 className="blog_heading2 pb-2 text-3xl sm:text-4xl md:text-4xl">
               Customer Retargeting 
             </h2>
             <p>
-              Did you know that only <b> 2% of website visitors make a purchase on their first visit?</b> 
+              Did you know that only 2% of website visitors make a purchase on their first visit? 
               Retargeting marketing allows you to reconnect with the 98% who leave without buying. 
-              At CST Social Marketing, we use retargeting marketing to re-engage potential 
-              customers who have visited your site but didn’t complete a purchase. 
-              By showing them tailored ads across the web, we remind them of your brand and 
-              products, increasing the chances of conversion. Retargeting helps you capture 
-              lost sales and build lasting customer relationships.
+              At CST Social Marketing, we use retargeting marketing to re-engage potential customers 
+              who have visited your site but didn’t complete a purchase.
             </p>
             <div className="flex justify-center md:justify-start pt-5 pb-8 md:pb-0">
               <AppModal
