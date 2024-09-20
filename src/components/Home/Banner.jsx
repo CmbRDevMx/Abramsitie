@@ -10,10 +10,9 @@ function Banner() {
         data-aos-duration="1500"
       >
         <div className="mt-8 md:mt-0 space-y-3 md:space-y-5 2xl:space-y-8 md:w-[43%]">
-          <h1 className="main_heading ">
-            Everyone is Not Your Audience?
-             {/* Let’s Find Who Is */}
-          </h1>
+        <h1 className="main_heading text-3xl md:text-4xl lg:text-5xl">
+          Everyone is Not Your Audience —<br /> Let’s Find Who Is
+        </h1>
           <p className="2xl:text-xl">
             Welcome to CST Social Marketing! We know everyone is not your target audience, 
             and many businesses miss the mark because of this. Our marketing process starts 
