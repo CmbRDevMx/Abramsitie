@@ -36,11 +36,11 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 md:w-[65%] lg:w-[75%] xl:w-[85%]">
+        <div className="mt-8 md:mt-0 md:w-[65%] lg:w-[65%] xl:w-[60%]">
           <img 
-            src="/img/target-1.png" 
+            src="/img/final_banner.png" 
             alt="" 
-            className="w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] object-cover" 
+            className="w-full h-[350px] sm:h-[450px] md:h-[500px] lg:h-[500px] xl:h-[500px] object-cover" 
           />
         </div>
       </div>

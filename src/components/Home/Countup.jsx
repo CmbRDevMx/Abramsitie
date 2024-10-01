@@ -306,7 +306,7 @@ function Countup() {
 
           <div className="mt-4 md:mt-0 lg:mt-14 md:w-1/2 md:h-[520px] 2xl:h-[700px]" data-aos="fade-right">
             <img 
-              src="/img/banner-3.png" 
+              src="/img/final_target.png" 
               alt="" 
               className="w-full h-[300px] sm:h-[400px] md:h-full object-cover rounded-3xl ml-auto" 
             />
@@ -396,7 +396,7 @@ function Countup() {
           data-aos-duration="1500"
         >
           <img
-            src="/img/retarget.png"
+            src="/img/final_marketing.png"
             alt="burger"
             className="z-10 lg:mb-2 w-full md:max-w-[700px] rounded-3xl mx-auto md:mr-0 shadow-lg"
           />
