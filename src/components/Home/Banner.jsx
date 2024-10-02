@@ -38,7 +38,7 @@ function Banner() {
         </div>
         <div className="mt-8 md:mt-0 md:w-[65%] lg:w-[65%] xl:w-[60%]">
           <img 
-            src="/img/final_banner.png" 
+            src="/img/new-img1.png" 
             alt="" 
             className="w-full h-[350px] sm:h-[450px] md:h-[500px] lg:h-[500px] xl:h-[500px] object-cover" 
           />

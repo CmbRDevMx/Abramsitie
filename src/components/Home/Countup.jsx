@@ -396,9 +396,9 @@ function Countup() {
           data-aos-duration="1500"
         >
           <img
-            src="/img/final_marketing.png"
+            src="/img/new-img3.png"
             alt="burger"
-            className="z-10 lg:mb-2 w-full md:max-w-[700px] rounded-3xl mx-auto md:mr-0 shadow-lg"
+            className="z-10 lg:mb-2 w-full md:max-w-[700px] rounded-3xl mx-auto md:mr-0"
           />
         </div>
         <div className="size-[200px] lg:size-[500px] absolute right-[2.5%] -z-10 blur-[50px] rounded-full bg-[#2337C6]/[0.4]"></div>
