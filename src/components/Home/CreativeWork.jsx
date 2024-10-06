@@ -116,7 +116,7 @@ const CreativeWork = () => {
       // className: "row-span-2",
     },
     {
-      imageUrl: "/img/work/work/Story 1.png",
+      imageUrl: "/img/zen.png",
       title: "Social Media Paid Advertisement",
       des: "Increase online sales traffic",
       className: "row-span-2",
@@ -129,7 +129,7 @@ const CreativeWork = () => {
       // className: "row-span-2",
     },
     {
-      imageUrl: "/img/work/3.png",
+      imageUrl: "/img/native-ultra.jpg",
       title: "Brand Awareness Campaign",
       des: "Drive online sign up",
       // className: "row-span-2",
