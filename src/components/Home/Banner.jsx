@@ -34,7 +34,7 @@ function Banner() {
         </div>
         <div className="mt-8 md:mt-0 md:w-[65%] lg:w-[40%] xl:w-[60%]">
           <img
-            src="/img/new-img1.png"
+            src="/img/new-target-banner.png"
             alt=""
             className="custom-image"
           />
