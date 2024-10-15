@@ -32,7 +32,7 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 md:w-[65%] lg:w-[40%] xl:w-[60%]">
+        <div className="mt-8 md:mt-0 md:w-[75%] lg:w-[55%] xl:w-[70%]">
           <img
             src="/img/new-target-banner.png"
             alt=""
