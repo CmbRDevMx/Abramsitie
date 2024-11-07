@@ -69,7 +69,7 @@ function Navbar() {
             className="btn py-1.5 md:py-[10px] px-2 md:px-[30px] rounded-md col-span-2 bg-red-600"
             onClick={handleToggle}
           >
-            <a href="https://calendly.com/andrew-el6d/30min">SCHEDULE A CALL </a> 
+            <a href="https://calendly.com/andrew-el6d/30min?month=2024-11">SCHEDULE A CALL </a> 
           </button>
         </div>
       </div>

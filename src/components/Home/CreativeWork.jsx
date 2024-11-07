@@ -152,7 +152,7 @@ const CreativeWork = () => {
         <div className="flex justify-center md:justify-center pb-[50px]">
           <button className="flex items-center text-xl gap-2">
             <span className="font-bold underline underline-offset-2">
-              <a href="https://calendly.com/andrew-el6d/30min">SCHEDULE A CALL</a>
+              <a href="https://calendly.com/andrew-el6d/30min?month=2024-11">SCHEDULE A CALL</a>
             </span>{" "}
             <FaArrowRightLong />
           </button>
