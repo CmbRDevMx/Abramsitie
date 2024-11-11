@@ -47,12 +47,9 @@ function About() {
             brand reaches the right people with the right message, every time
           </p>
           <div className="flex justify-center">
-          <Link
+          <a
               href="https://calendly.com/andrew-el6d/30min?month=2024-11"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
+              
             >
               <button className="flex items-center text-xl gap-2">
                 <span className="font-bold underline underline-offset-2">
@@ -62,7 +59,7 @@ function About() {
                 </span>{" "}
                 <FaArrowRightLong />
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
