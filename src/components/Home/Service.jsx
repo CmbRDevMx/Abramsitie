@@ -125,7 +125,7 @@ function Service() {
 
           <button className="flex items-center text-xl gap-2">
             <span className="font-bold underline underline-offset-2">
-              <a href="https://calendly.com/d/ck73-fkt-sz7/cst-marketing-call">Schedule A Call Today</a>
+              <a href="https://calendly.com/andrew-el6d/30min?month=2024-11">Schedule A Call Today</a>
             </span>{" "}
             <FaArrowRightLong />
           </button>

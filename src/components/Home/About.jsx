@@ -56,7 +56,7 @@ function About() {
             >
               <button className="flex items-center text-xl gap-2">
                 <span className="font-bold underline underline-offset-2">
-                  <a href="https://calendly.com/andrew-el6d/30min">
+                  <a href="https://calendly.com/andrew-el6d/30min?month=2024-11">
                     WORK WITH US
                   </a>
                 </span>{" "}
