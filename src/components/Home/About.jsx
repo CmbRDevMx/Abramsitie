@@ -48,7 +48,7 @@ function About() {
           </p>
           <div className="flex justify-center">
           <Link
-              to="service"
+              href="https://calendly.com/andrew-el6d/30min?month=2024-11"
               spy={true}
               smooth={true}
               offset={0}
